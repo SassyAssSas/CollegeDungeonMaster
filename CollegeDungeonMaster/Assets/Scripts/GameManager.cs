@@ -1,0 +1,102 @@
+using UnityEngine;
+using UnityEngine.InputSystem;
+using GameSystems.SceneLoading;
+using GameSystems.DungeonGeneration;
+using GameSystems.Navigation;
+using System.Threading.Tasks;
+using System.Collections.Generic;
+
+public class GameManager : MonoBehaviour {
+   private GameManager() { }
+
+   public static GameManager Instance { get; private set; }
+
+   public delegate void GameManagerAction(GameState state);
+   public event GameManagerAction OnGameStateChange;
+
+   public PlayerInput input;
+
+   public GameState CurrentGameState { get; private set; }
+
+   public GameObject[] createOnRunStart;
+
+   private void Awake() {
+      if (Instance == null) {
+         Instance = this;
+         DontDestroyOnLoad(this);
+
+         input = new();
+         input.Game.FullscreenToggle.performed += OnFullScreenToggle;
+      }
+      else {
+         Destroy(gameObject);
+      }
+   }
+
+   private void OnEnable() {
+      input?.Enable();
+   }
+
+   private void OnDisable() {
+      input?.Disable();
+   }
+
+   private void OnDestroy() {
+      if (input is null)
+         return;
+
+      input.Game.FullscreenToggle.performed -= OnFullScreenToggle;
+      input.Dispose();
+   }
+
+   public void StartNewRun() {
+      SceneLoader.Instance.OnSceneLoad += OnSceneLoad;
+      SceneLoader.Instance.LoadScene("Dungeon", TransitionManager.FullTransitionType.Fade, GameState.InGame);
+      
+      static void OnSceneLoad() {
+         DungeonManager.Instance.GenerateDungeon();
+         Time.timeScale = 1f;
+
+         SceneLoader.Instance.OnSceneLoad -= OnSceneLoad;
+      }
+   }
+
+   public void ReturnToMenu() {
+      SceneLoader.Instance.OnSceneLoad += OnSceneLoad;
+      SceneLoader.Instance.LoadScene("MainMenu", TransitionManager.FullTransitionType.Fade, GameState.MainMenu);
+
+      static void OnSceneLoad() {
+         Time.timeScale = 1f;
+
+         SceneLoader.Instance.OnSceneLoad -= OnSceneLoad;
+      }
+   }
+
+   public void UpdateGameState(GameState state) {
+      CurrentGameState = state;
+
+      OnGameStateChange?.Invoke(state);
+   }
+
+   private void OnFullScreenToggle(InputAction.CallbackContext context) {
+      if (Screen.fullScreen)
+         Screen.SetResolution(640, 480, false);
+      else
+         Screen.SetResolution(1440, 1080, true);
+   }
+
+   public void LoadTheGame() {
+      UpdateGameState(GameState.Loading);
+
+      foreach (var gameObject in createOnRunStart) {
+         Instantiate(gameObject);
+      }
+   }
+
+   public enum GameState {
+      MainMenu = 0,
+      Loading = 1,
+      Paused = 2,
+      InGame = 3,
+   }
+}

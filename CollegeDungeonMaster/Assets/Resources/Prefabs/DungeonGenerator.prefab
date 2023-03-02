@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4484576565372158333
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4484576565372158335}
+  - component: {fileID: 4484576565372158334}
+  m_Layer: 0
+  m_Name: DungeonGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4484576565372158335
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4484576565372158333}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 9.542716, y: 0.7668361, z: 2.005164}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4484576565372158334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4484576565372158333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b8461e03887d71640b60b383fd344f16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topLeftCorner: {fileID: 11400000, guid: e043ec7cf50f35249b10b212780b7dd7, type: 2}
+  topRightCorner: {fileID: 11400000, guid: 54bcf1bb88c2b804b98f1ccb531f5e1e, type: 2}
+  bottomLeftCorner: {fileID: 11400000, guid: b38c01961d592af4e83718c748f87d0e, type: 2}
+  bottomRightCorner: {fileID: 11400000, guid: dc6ceabb19cfa2546a3a9490bb39f4cd, type: 2}
+  topExitOpened: {fileID: 11400000, guid: 8ee62aac37fd2e94dbfd824eb03dadfe, type: 2}
+  topExitBlocked: {fileID: 11400000, guid: ea6f3de9294ff784a8c51f344a8c4a31, type: 2}
+  bottomExitOpened: {fileID: 11400000, guid: 3e15be445763051469f7fca4d6a9fd05, type: 2}
+  bottomExitBlocked: {fileID: 11400000, guid: 16c1a8b15266a2a40b078253876d8ce7, type: 2}
+  leftExitOpened: {fileID: 11400000, guid: 42e2b4a6e28eab54ea1b6c10863703b4, type: 2}
+  leftExitBlocked: {fileID: 11400000, guid: 417dd054f7239ab43938aa75cbd71368, type: 2}
+  rightExitOpened: {fileID: 11400000, guid: fb9e8a2eaa3f95746b142080643a8171, type: 2}
+  rightExitBlocked: {fileID: 11400000, guid: ec8f067284684c94688ce548932904a1, type: 2}
+  cleanFloor: {fileID: 11400000, guid: ab5325dd29f3bcd4b9bc39b1bc1f8590, type: 2}
+  _foregroundWalls: {fileID: 0}
+  _backgroundWalls: {fileID: 0}
+  _decorations: {fileID: 0}
+  _floor: {fileID: 0}
+  generationIterations: 3
+  minimumRoomsBeforeDeadEnds: 3

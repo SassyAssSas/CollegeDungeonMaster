@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcfdf35dbdf5174b8326d3cce638bf5, type: 3}
+  m_Name: Pistol Shooter
+  m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: -1298940460, guid: 18df16e05a4a1934e8841923635d8717, type: 3}
+  <MovementSpeed>k__BackingField: 4
+  <Health>k__BackingField: 30
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: 0deeb84cd759e364e9dd775b9a3c974a, type: 2}
+  <Gun>k__BackingField: {fileID: 11400000, guid: d0781f6e1ea51da48befb75bfe8fc88e, type: 2}

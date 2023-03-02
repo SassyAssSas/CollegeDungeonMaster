@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fcfdf35dbdf5174b8326d3cce638bf5, type: 3}
+  m_Name: Shotgun Shooter
+  m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: -2113072595, guid: 649b30710992e0d4b9b244378b7ebb4d, type: 3}
+  <MovementSpeed>k__BackingField: 3.35
+  <Health>k__BackingField: 35
+  <AnimatorController>k__BackingField: {fileID: 9100000, guid: e21d2e2d3cda9cf4a82a778a4e6bf67c, type: 2}
+  <Gun>k__BackingField: {fileID: 11400000, guid: c63e07aea5655734cb3732adab38a183, type: 2}

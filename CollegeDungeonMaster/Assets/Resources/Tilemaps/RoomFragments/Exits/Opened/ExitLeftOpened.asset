@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d92776916d535d4c9207167e33241aa, type: 3}
+  m_Name: ExitLeftOpened
+  m_EditorClassIdentifier: 
+  <Tiles>k__BackingField:
+  - <Tile>k__BackingField: {fileID: 11400000, guid: efadbfa2a3a1e1044818d37e26bf0bda, type: 2}
+    <Position>k__BackingField: {x: 0, y: 0}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 1cf150acd6589674db06b397776cce1c, type: 2}
+    <Position>k__BackingField: {x: 0, y: -1}
+    <Layer>k__BackingField: 4
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 1cf150acd6589674db06b397776cce1c, type: 2}
+    <Position>k__BackingField: {x: 0, y: -2}
+    <Layer>k__BackingField: 4
+  - <Tile>k__BackingField: {fileID: 11400000, guid: e16940895f53e264e8f390d9aff07239, type: 2}
+    <Position>k__BackingField: {x: 0, y: -3}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 1, y: 0}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 11abe06cd57178b43bd9ac758de181da, type: 2}
+    <Position>k__BackingField: {x: 1, y: -1}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: f6f4801524747474e9926985a891f900, type: 2}
+    <Position>k__BackingField: {x: 1, y: -2}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 242b077af08439e49b5c74a69e2047fd, type: 2}
+    <Position>k__BackingField: {x: 1, y: -3}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 876a01d4ca6ffc645b737cace6d500a5, type: 2}
+    <Position>k__BackingField: {x: 2, y: -1}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: f8a1e1d451f9ca54e8aed1350790d143, type: 2}
+    <Position>k__BackingField: {x: 2, y: -2}
+    <Layer>k__BackingField: 3

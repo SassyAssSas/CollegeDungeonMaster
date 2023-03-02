@@ -1,0 +1,1231 @@
+fileFormatVersion: 2
+guid: f6e24a71696d9844dbca9092d1ad6a48
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Molotov 1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 112
+        width: 7
+        height: 16
+      alignment: 9
+      pivot: {x: 0.37454462, y: 0.23105335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aebe8aa0fa89b86469a47172e6d431fd
+      internalID: 2135952413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Molotov 2
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 112
+        width: 9
+        height: 13
+      alignment: 9
+      pivot: {x: 0.5975772, y: 0.2973398}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b91bafa2ee83324792b526c7a6d2ca3
+      internalID: 2117412340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grenade 2
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 112
+        width: 5
+        height: 11
+      alignment: 9
+      pivot: {x: 0.28923416, y: 0.37226245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894331e9138fe964db1b8f3e74a5804d
+      internalID: -1138944401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grenade 1
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 112
+        width: 8
+        height: 9
+      alignment: 9
+      pivot: {x: 0.39022636, y: 0.3829066}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e535538d1b76e24399eb886fc2e1b50
+      internalID: -1278199544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grenade 3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 112
+        width: 7
+        height: 10
+      alignment: 9
+      pivot: {x: 0.3619984, y: 0.3682701}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8205f3c4a4603d47a80f62d0c718209
+      internalID: 1990522741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Knife
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 101
+        width: 16
+        height: 5
+      alignment: 9
+      pivot: {x: 0.17616709, y: 0.4473068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -1.5}
+        - {x: -7, y: 1.5}
+        - {x: 7, y: 1.5}
+        - {x: 4, y: -1.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f28778062642ee74b80557de62a1c220
+      internalID: -1225240088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kerambit
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 100
+        width: 13
+        height: 6
+      alignment: 9
+      pivot: {x: 0.29734054, y: 0.6317279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4.5, y: -1}
+        - {x: -4.5, y: 2}
+        - {x: 4.5, y: 2}
+        - {x: 4.5, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2546d5a62dd8f5428b4a2b022ebcca1
+      internalID: -1866563416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Machete
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 100
+        width: 23
+        height: 6
+      alignment: 9
+      pivot: {x: 0.17545103, y: 0.6756363}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2.5, y: -1}
+        - {x: -9.5, y: 0}
+        - {x: -9.5, y: 2}
+        - {x: 10.5, y: 2}
+        - {x: 10.5, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e71246651936a4e998ddb4e2d08c5e
+      internalID: 1107190642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shovel
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 84
+        width: 22
+        height: 9
+      alignment: 9
+      pivot: {x: 0.3337926, y: 0.4854889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -9, y: -2.5}
+        - {x: -9, y: 2.5}
+        - {x: -5, y: 2.5}
+        - {x: -5, y: 1.5}
+        - {x: 4, y: 1.5}
+        - {x: 4, y: 2.5}
+        - {x: 8, y: 2.5}
+        - {x: 8, y: -2.5}
+        - {x: 4, y: -2.5}
+        - {x: 4, y: -1.5}
+        - {x: -5, y: -1.5}
+        - {x: -5, y: -2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f08fc27645ab69408eeee2aa8edc446
+      internalID: -1505540685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sword
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 101
+        width: 30
+        height: 7
+      alignment: 9
+      pivot: {x: 0.175, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -14, y: -0.5}
+        - {x: -14, y: 0.5}
+        - {x: 14, y: 0.5}
+        - {x: 14, y: -0.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 260761b8b8d4c704b927b84834133c47
+      internalID: -315303635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Katana
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 101
+        width: 32
+        height: 7
+      alignment: 9
+      pivot: {x: 0.14241838, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -15, y: -0.5}
+        - {x: -15, y: 0.5}
+        - {x: 15, y: 0.5}
+        - {x: 15, y: -0.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e43fe6893ef90554ca5818ffd2b7c992
+      internalID: 1825240244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bat
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 84
+        width: 25
+        height: 7
+      alignment: 9
+      pivot: {x: 0.17090973, y: 0.48134285}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 5.5, y: -2.5}
+        - {x: -11.5, y: -0.5}
+        - {x: -11.5, y: 0.5}
+        - {x: 5.5, y: 2.5}
+        - {x: 11.5, y: 0.5}
+        - {x: 11.5, y: -0.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3fbc4dbb7dbcd4ea7b8dc8fdf73850
+      internalID: 577022410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Rocket gun
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 27
+        height: 11
+      alignment: 9
+      pivot: {x: 0.34887654, y: 0.4010828}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -10.5, y: -2.5}
+        - {x: -10.5, y: 3.5}
+        - {x: 10.5, y: 3.5}
+        - {x: 10.5, y: -2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dce771eecd32c4381ea31a1c38fa1b
+      internalID: -2141128966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shotgun
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 27
+        height: 13
+      alignment: 9
+      pivot: {x: 0.16249084, y: 0.405838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -1.5, y: -0.5}
+        - {x: -11.5, y: -4.5}
+        - {x: -11.5, y: 3.5}
+        - {x: 10.5, y: 3.5}
+        - {x: 10.5, y: -0.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2edd6ae6e5c95a3449ad8a6e58de93c6
+      internalID: 1016079045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sniper Riffle 3
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 39
+        height: 16
+      alignment: 9
+      pivot: {x: 0.35003898, y: 0.35548782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 2.5, y: 0}
+        - {x: -1.5, y: -4}
+        - {x: -15.5, y: -4}
+        - {x: -15.5, y: 3}
+        - {x: 15.5, y: 3}
+        - {x: 15.5, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f53066066cd765f4898ad21ada4fa627
+      internalID: -1395948840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sniper Riffle 2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 36
+        height: 14
+      alignment: 9
+      pivot: {x: 0.34132004, y: 0.31541333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -14, y: -3}
+        - {x: -14, y: 3}
+        - {x: 13, y: 3}
+        - {x: 13, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b54f258197b8b74c9107ee5452e2316
+      internalID: -1597690073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sniper Riffle
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 48
+        height: 14
+      alignment: 9
+      pivot: {x: 0.26764742, y: 0.3056984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -20, y: -3}
+        - {x: -20, y: 3}
+        - {x: 12, y: 3}
+        - {x: 12, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c601738bf9c2a645975754c82f1687f
+      internalID: -1420961546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Minigun
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 48
+        width: 35
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13.5, y: -3}
+        - {x: -13.5, y: 3}
+        - {x: 12.5, y: 3}
+        - {x: 12.5, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f6628a6e6ddd38409e369492e4ef357
+      internalID: -1770253380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GIANT FUCKING GUN
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 51
+        height: 30
+      alignment: 9
+      pivot: {x: 0.34055045, y: 0.46694347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -19.5, y: -8}
+        - {x: -19.5, y: 7}
+        - {x: -1.5, y: 7}
+        - {x: -1.5, y: 5}
+        - {x: 16.5, y: 5}
+        - {x: 16.5, y: 1}
+        - {x: -1.5, y: 1}
+        - {x: -1.5, y: -8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5756a1e99a536749ba5204672d53cd5
+      internalID: -808557361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightsaber Red
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 54
+        width: 30
+        height: 4
+      alignment: 9
+      pivot: {x: 0.13276978, y: 0.46599674}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -14, y: -1}
+        - {x: -14, y: 0}
+        - {x: 12, y: 0}
+        - {x: 12, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11cdeb5499d48aa42ba2735749a8bb9f
+      internalID: 884931098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assault Riffle 2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 31
+        height: 13
+      alignment: 9
+      pivot: {x: 0.35672662, y: 0.47643778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -11.5, y: -2.5}
+        - {x: -11.5, y: 3.5}
+        - {x: 9.5, y: 3.5}
+        - {x: 9.5, y: -2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c22b7750b0bbd4da5f603193350dd8
+      internalID: 2095092950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Assault Riffle
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 30
+        height: 10
+      alignment: 9
+      pivot: {x: 0.33153024, y: 0.45405388}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -12, y: -1}
+        - {x: -12, y: 3}
+        - {x: 10, y: 3}
+        - {x: 10, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1203288b07f62d42ae2c19f4689d7d1
+      internalID: 1519393185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shotgun 2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 11
+      alignment: 9
+      pivot: {x: 0.2606964, y: 0.3329225}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -13, y: -2.5}
+        - {x: -13, y: 3.5}
+        - {x: 10, y: 3.5}
+        - {x: 10, y: -2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd69eb278eaf4b04887e31b1a8553c38
+      internalID: -1378331775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightsaber Blue
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 38
+        width: 30
+        height: 4
+      alignment: 9
+      pivot: {x: 0.12370198, y: 0.43199444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -14, y: -1}
+        - {x: -14, y: 0}
+        - {x: 12, y: 0}
+        - {x: 12, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d43132148b054d4c97f95ffa485e94b
+      internalID: 569476604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UZ
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 16
+        width: 17
+        height: 13
+      alignment: 9
+      pivot: {x: 0.3558549, y: 0.5235622}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5.5, y: -2.5}
+        - {x: -5.5, y: 3.5}
+        - {x: 4.5, y: 3.5}
+        - {x: 4.5, y: -2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bd39bf594845447a6fa99f7294e1dd
+      internalID: -1270701229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_60
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 16
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7.5, y: -2.5}
+        - {x: -7.5, y: 3.5}
+        - {x: 6.5, y: 3.5}
+        - {x: 6.5, y: -2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365d6b09281a1764e826b7768eafa938
+      internalID: 424797291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UZI 2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 16
+        width: 20
+        height: 12
+      alignment: 9
+      pivot: {x: 0.37724876, y: 0.42342377}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -7, y: -4}
+        - {x: -7, y: 2}
+        - {x: 5, y: 2}
+        - {x: 5, y: -4}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89210c1f170c724b89bbc1ca2a8e1b1
+      internalID: -1912193637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_62
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 16
+        width: 21
+        height: 11
+      alignment: 9
+      pivot: {x: 0.368725, y: 0.37469187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6.5, y: -2.5}
+        - {x: -6.5, y: 2.5}
+        - {x: 5.5, y: 2.5}
+        - {x: 5.5, y: -2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2008d172c03d4c45a2e0f6bd6cbdce6
+      internalID: -1819911215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_63
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 16
+        width: 26
+        height: 12
+      alignment: 9
+      pivot: {x: 0.39986068, y: 0.5255262}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -3}
+        - {x: -8, y: 3}
+        - {x: 7, y: 3}
+        - {x: 7, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04c7746a016c57478ee200a8fd6f0bc
+      internalID: 1236156407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Weapons_64
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 16
+        width: 27
+        height: 12
+      alignment: 9
+      pivot: {x: 0.40356955, y: 0.5510519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8.5, y: -2}
+        - {x: -8.5, y: 4}
+        - {x: 8.5, y: 4}
+        - {x: 8.5, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94be456a1f00dd14093118e5ee0ae0b1
+      internalID: 1300768762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 12
+        height: 10
+      alignment: 9
+      pivot: {x: 0.16468617, y: 0.19384082}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -3}
+        - {x: -4, y: 3}
+        - {x: 4, y: 3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e413caf0337e6a84bb2f751e2192874c
+      internalID: 1321273312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol 2
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 9
+      alignment: 9
+      pivot: {x: 0.3755622, y: 0.4489492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: -3.5}
+        - {x: -6, y: 2.5}
+        - {x: 5, y: 2.5}
+        - {x: 1, y: -1.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e968e4102b15147883f3c9933e05e8
+      internalID: 1161258535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol 4
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 10
+      alignment: 9
+      pivot: {x: 0.22240782, y: 0.37747657}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: -4}
+        - {x: -6, y: 2}
+        - {x: 7, y: 2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a00eaabe622a24a4382b48475033222d
+      internalID: 1750347118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol 6
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 15
+        height: 10
+      alignment: 9
+      pivot: {x: 0.285584, y: 0.5000001}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -5.5, y: -4}
+        - {x: -5.5, y: 4}
+        - {x: 5.5, y: 4}
+        - {x: 0.5, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec13a2c1b973dae44bf0a90fb7a7ae65
+      internalID: 1212670434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol 7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.2894125, y: 0.47215423}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: -4.5}
+        - {x: -6, y: 2.5}
+        - {x: 6, y: 2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec167e2489309a74f8266e86e54fc441
+      internalID: 519888667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shotgun 3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 30
+        height: 12
+      alignment: 9
+      pivot: {x: 0.36216125, y: 0.50000006}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -11, y: -2}
+        - {x: -11, y: 3}
+        - {x: 10, y: 3}
+        - {x: 10, y: -2}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754d740f547c721479041d17e93a641c
+      internalID: 816988499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banana
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 2
+        width: 12
+        height: 10
+      alignment: 9
+      pivot: {x: 0.5, y: 0.37747654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -3}
+        - {x: -4, y: 0}
+        - {x: 0, y: 0}
+        - {x: 4, y: 3}
+        - {x: 4, y: -3}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36528f2b8fd11ef44830ac19679bd010
+      internalID: 1694383613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UZI
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 11
+      alignment: 9
+      pivot: {x: 0.24155235, y: 0.41646174}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -6, y: -3.5}
+        - {x: -6, y: 2.5}
+        - {x: 5, y: 2.5}
+        - {x: 5, y: -3.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecb631229585e134fa1f6f35854834b4
+      internalID: 1252705412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol 8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 10
+        height: 9
+      alignment: 9
+      pivot: {x: 0.3774765, y: 0.43193203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -2.5}
+        - {x: -3, y: 2.5}
+        - {x: 3, y: 2.5}
+        - {x: 3, y: -2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43037ad86bc2904dbd935a9ce1ac688
+      internalID: 564780358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol 3
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 10
+        height: 9
+      alignment: 9
+      pivot: {x: 0.34684563, y: 0.43193203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -3, y: -3.5}
+        - {x: -3, y: 2.5}
+        - {x: 3, y: 2.5}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e94b8b964f4e40448f69dfb78e01c49
+      internalID: 1932758639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pistol 5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 12
+        height: 10
+      alignment: 9
+      pivot: {x: 0.33408293, y: 0.4540538}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -4, y: -4}
+        - {x: -4, y: 4}
+        - {x: 4, y: 4}
+        - {x: 1, y: -1}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e8a42af49bcfa40b512e8fbd7b0132
+      internalID: 364477230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      RocketGun: 469690041
+      Weapons_64: 1300768762
+      Pistol 6: 364477230
+      Weapons_20: 1768654209
+      GIANT FUCKING GUN: -808557361
+      Weapons_39: -1522918007
+      Sniper Riffle 2: -1395948840
+      Lightsaber Red: 884931098
+      Weapons_34: 1341165156
+      Weapons_52: 1348191225
+      Shovel: -1505540685
+      Weapons_10: -1149821544
+      Weapons_35: 2093366403
+      Weapons_40: 1119428099
+      Weapons_33: -1621697796
+      Knife: -1225240088
+      Weapons_19: 296153235
+      Minigun: -1770253380
+      Weapons_44: 2034425355
+      UZI: 1252705412
+      Weapons_75: 942381329
+      UZI 2: -1912193637
+      Assault Riffle 2: 2095092950
+      Weapons_63: 1236156407
+      Weapons_32: 769534533
+      Pistol 5: 1750347118
+      Shotgun: 1016079045
+      Weapons_38: -939157387
+      Pistol: 1321273312
+      Weapons_18: -1910804985
+      Sniper Riffle: -1420961546
+      Weapons_31: -1865923607
+      Weapons_74: 1279703530
+      Weapons_15: 1147532039
+      Weapons_72: -1206635471
+      Pistol 8: 1252705412
+      Molotov 2: -1278199544
+      Heal: -2124133890
+      Molotov 1: 2117412340
+      Grenade 1: -1138944401
+      Shotgun 2: -1378331775
+      Weapons_43: 948296883
+      Lightsaber Blue: 569476604
+      UZ: -1270701229
+      Weapons_62: -1819911215
+      Banana: 1694383613
+      Rocket gun: -2141128966
+      Sword: -315303635
+      Katana: 1825240244
+      Kerambit: -1866563416
+      Weapons_5: -996905566
+      Weapons_37: -14818928
+      Weapons_41: -1627370157
+      Weapons_42: 259872391
+      Weapons_60: 424797291
+      Sniper Riffle 3: -1597690073
+      Weapons_25: -334611710
+      Grenade 2: -1138944401
+      Bat: 577022410
+      Weapons_17: 852916914
+      Weapons_73: -103443683
+      Assault Riffle: 1519393185
+      Weapons_23: 860176158
+      Weapons_12: 1190003257
+      Weapons_4: 1354728034
+      Pistol 2: 1161258535
+      Pistol 3: 1161258535
+      Weapons_36: -1364429257
+      Weapons_16: -1943019946
+      Shotgun 3: 816988499
+      Pistol 4: 1932758639
+      Weapons_3: 487015815
+      Grenade 3: 1990522741
+      Pistol 7: 1212670434
+      Weapons_11: -1380501206
+      Machete: 1107190642
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

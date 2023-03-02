@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: f953cfe3014b77049bfc6d5e4082e84f
+  - enabled: 1
+    path: Assets/Scenes/LoadingScreen.unity
+    guid: 0e885cde831479a4f93e44e1bf032701
+  - enabled: 1
+    path: Assets/Scenes/Dungeon.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 0
+    path: Assets/Scenes/Development/TilemapCreator.unity
+    guid: e00f98c907d23c240a538115887663ff
+  - enabled: 0
+    path: Assets/Scenes/Development/GenerationTest.unity
+    guid: cff2ccce7d22aa94e80bf2bd3c4611b3
+  m_configObjects: {}

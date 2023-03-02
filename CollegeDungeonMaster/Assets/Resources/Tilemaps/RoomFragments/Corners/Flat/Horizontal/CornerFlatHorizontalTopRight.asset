@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d92776916d535d4c9207167e33241aa, type: 3}
+  m_Name: CornerFlatHorizontalTopRight
+  m_EditorClassIdentifier: 
+  <Tiles>k__BackingField:
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 5e053bf3fdf7fcc4c9baa358678a5380, type: 2}
+    <Position>k__BackingField: {x: 0, y: -2}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 1, y: 0}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 7e2d1fe195c7f8d4bbd78258734e9d9b, type: 2}
+    <Position>k__BackingField: {x: 1, y: -1}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 11abe06cd57178b43bd9ac758de181da, type: 2}
+    <Position>k__BackingField: {x: 1, y: -2}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 2, y: 0}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: efadbfa2a3a1e1044818d37e26bf0bda, type: 2}
+    <Position>k__BackingField: {x: 2, y: -1}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 5e053bf3fdf7fcc4c9baa358678a5380, type: 2}
+    <Position>k__BackingField: {x: 2, y: -2}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 3, y: 0}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 3, y: -1}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 11abe06cd57178b43bd9ac758de181da, type: 2}
+    <Position>k__BackingField: {x: 3, y: -2}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 016d5e9ac410fe24d9b337db0445600d, type: 2}
+    <Position>k__BackingField: {x: 3, y: -3}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 4, y: 0}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 7e2d1fe195c7f8d4bbd78258734e9d9b, type: 2}
+    <Position>k__BackingField: {x: 4, y: -1}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 5e053bf3fdf7fcc4c9baa358678a5380, type: 2}
+    <Position>k__BackingField: {x: 4, y: -2}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 5, y: 0}
+    <Layer>k__BackingField: 3
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 6bd047208e58fd14d8d313eb8941c31f, type: 2}
+    <Position>k__BackingField: {x: 5, y: -1}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 11abe06cd57178b43bd9ac758de181da, type: 2}
+    <Position>k__BackingField: {x: 5, y: -2}
+    <Layer>k__BackingField: 3

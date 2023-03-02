@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15b427092e7bf47478049ca1f0ecc3bf, type: 3}
+  m_Name: Default Middle Bullet
+  m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: -1762787926, guid: 5c8d0777ed0a2d14482c033f8f49dcbc, type: 3}
+  <MovementSpeed>k__BackingField: 10
+  gun: {fileID: 0}

@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: d2341f6f627571b4786a35144898332f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - <Sprite>k__BackingField: {fileID: -1770253380, guid: f6e24a71696d9844dbca9092d1ad6a48, type: 3}
+  - <Bullet>k__BackingField: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

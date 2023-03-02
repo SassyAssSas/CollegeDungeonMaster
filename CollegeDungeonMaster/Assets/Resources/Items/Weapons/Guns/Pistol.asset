@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2341f6f627571b4786a35144898332f, type: 3}
+  m_Name: Pistol
+  m_EditorClassIdentifier: 
+  <Sprite>k__BackingField: {fileID: 1321273312, guid: f6e24a71696d9844dbca9092d1ad6a48, type: 3}
+  <Damage>k__BackingField: 10
+  <Bullet>k__BackingField: {fileID: 11400000, guid: cf495d096d4716448b06686445649e69, type: 2}
+  <GunpointOffset>k__BackingField: {x: 0.4, y: 0.3}
+  <BulletsPerShot>k__BackingField: 1
+  <AngleBetweenBullets>k__BackingField: 0
+  <ShootCooldownSeconds>k__BackingField: 0.1
+  <Ammo>k__BackingField: 5
+  <ReloadTimeSeconds>k__BackingField: 1.3
+  <ShootSoundName>k__BackingField: DefaultShoot

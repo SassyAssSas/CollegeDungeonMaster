@@ -1,0 +1,327 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d92776916d535d4c9207167e33241aa, type: 3}
+  m_Name: BigRoomBrackeysWalls
+  m_EditorClassIdentifier: 
+  <Tiles>k__BackingField:
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 0, y: 0}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 0, y: -14}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: c9a298943ac66a2408c580fff0bc53b9, type: 2}
+    <Position>k__BackingField: {x: 0, y: -15}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 1, y: -15}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 2, y: -8}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d56daf111f7129644be3df064b8d75d6, type: 2}
+    <Position>k__BackingField: {x: 3, y: -3}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea532395fa79aa743bdf32ac010671ef, type: 2}
+    <Position>k__BackingField: {x: 3, y: -4}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 54d8302ed130eed42bca882d29fe3096, type: 2}
+    <Position>k__BackingField: {x: 3, y: -5}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 13dea13d672f227489dc0627c257beba, type: 2}
+    <Position>k__BackingField: {x: 3, y: -6}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 658e24fc7ab528046973c61193d4379c, type: 2}
+    <Position>k__BackingField: {x: 3, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea532395fa79aa743bdf32ac010671ef, type: 2}
+    <Position>k__BackingField: {x: 3, y: -8}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 54d8302ed130eed42bca882d29fe3096, type: 2}
+    <Position>k__BackingField: {x: 3, y: -9}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea532395fa79aa743bdf32ac010671ef, type: 2}
+    <Position>k__BackingField: {x: 3, y: -10}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 54d8302ed130eed42bca882d29fe3096, type: 2}
+    <Position>k__BackingField: {x: 3, y: -11}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: efadbfa2a3a1e1044818d37e26bf0bda, type: 2}
+    <Position>k__BackingField: {x: 3, y: -12}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 069fe6d706d06c94e90a53a9b83a6da7, type: 2}
+    <Position>k__BackingField: {x: 4, y: -3}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 4, y: -4}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 145c1d790c54d0e4f8199b4a68945589, type: 2}
+    <Position>k__BackingField: {x: 4, y: -5}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 9bfde9a5f3927694a90b7d719626dd0f, type: 2}
+    <Position>k__BackingField: {x: 4, y: -6}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: e78a76f019676454898fd833a88e5667, type: 2}
+    <Position>k__BackingField: {x: 4, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 4b72b78062696174b995943f0a8184b7, type: 2}
+    <Position>k__BackingField: {x: 4, y: -8}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 145c1d790c54d0e4f8199b4a68945589, type: 2}
+    <Position>k__BackingField: {x: 4, y: -9}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 60b7d96410081774799f21d718fbb1ea, type: 2}
+    <Position>k__BackingField: {x: 4, y: -10}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 4, y: -11}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 4, y: -12}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 2b96951f4f596da44ad1a6fdb5601081, type: 2}
+    <Position>k__BackingField: {x: 4, y: -12}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d0165b0f58439b340b43abc68103008e, type: 2}
+    <Position>k__BackingField: {x: 5, y: -3}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 145c1d790c54d0e4f8199b4a68945589, type: 2}
+    <Position>k__BackingField: {x: 5, y: -4}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 7e2d1fe195c7f8d4bbd78258734e9d9b, type: 2}
+    <Position>k__BackingField: {x: 5, y: -5}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 5, y: -6}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d0165b0f58439b340b43abc68103008e, type: 2}
+    <Position>k__BackingField: {x: 5, y: -10}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 4b72b78062696174b995943f0a8184b7, type: 2}
+    <Position>k__BackingField: {x: 5, y: -11}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 7e2d1fe195c7f8d4bbd78258734e9d9b, type: 2}
+    <Position>k__BackingField: {x: 5, y: -12}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d56daf111f7129644be3df064b8d75d6, type: 2}
+    <Position>k__BackingField: {x: 9, y: -6}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 13dea13d672f227489dc0627c257beba, type: 2}
+    <Position>k__BackingField: {x: 9, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea532395fa79aa743bdf32ac010671ef, type: 2}
+    <Position>k__BackingField: {x: 9, y: -8}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: efadbfa2a3a1e1044818d37e26bf0bda, type: 2}
+    <Position>k__BackingField: {x: 9, y: -9}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d0165b0f58439b340b43abc68103008e, type: 2}
+    <Position>k__BackingField: {x: 10, y: -6}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 60b7d96410081774799f21d718fbb1ea, type: 2}
+    <Position>k__BackingField: {x: 10, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 4b72b78062696174b995943f0a8184b7, type: 2}
+    <Position>k__BackingField: {x: 10, y: -8}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 10, y: -9}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 2b96951f4f596da44ad1a6fdb5601081, type: 2}
+    <Position>k__BackingField: {x: 10, y: -9}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d56daf111f7129644be3df064b8d75d6, type: 2}
+    <Position>k__BackingField: {x: 11, y: -1}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 658e24fc7ab528046973c61193d4379c, type: 2}
+    <Position>k__BackingField: {x: 11, y: -2}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 11, y: -3}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 069fe6d706d06c94e90a53a9b83a6da7, type: 2}
+    <Position>k__BackingField: {x: 11, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 7e2d1fe195c7f8d4bbd78258734e9d9b, type: 2}
+    <Position>k__BackingField: {x: 11, y: -8}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d56daf111f7129644be3df064b8d75d6, type: 2}
+    <Position>k__BackingField: {x: 11, y: -12}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea532395fa79aa743bdf32ac010671ef, type: 2}
+    <Position>k__BackingField: {x: 11, y: -13}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: efadbfa2a3a1e1044818d37e26bf0bda, type: 2}
+    <Position>k__BackingField: {x: 11, y: -14}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d0165b0f58439b340b43abc68103008e, type: 2}
+    <Position>k__BackingField: {x: 12, y: -1}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 4b72b78062696174b995943f0a8184b7, type: 2}
+    <Position>k__BackingField: {x: 12, y: -2}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 7e2d1fe195c7f8d4bbd78258734e9d9b, type: 2}
+    <Position>k__BackingField: {x: 12, y: -3}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 12, y: -6}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: e16940895f53e264e8f390d9aff07239, type: 2}
+    <Position>k__BackingField: {x: 12, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 6bd047208e58fd14d8d313eb8941c31f, type: 2}
+    <Position>k__BackingField: {x: 12, y: -8}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 0de9494de53af5647a001269c7ca3b45, type: 2}
+    <Position>k__BackingField: {x: 12, y: -9}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 242b077af08439e49b5c74a69e2047fd, type: 2}
+    <Position>k__BackingField: {x: 12, y: -12}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: e78a76f019676454898fd833a88e5667, type: 2}
+    <Position>k__BackingField: {x: 12, y: -13}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 12, y: -14}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d56daf111f7129644be3df064b8d75d6, type: 2}
+    <Position>k__BackingField: {x: 13, y: -6}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 703b17397e8097144a0d91798af2cd2a, type: 2}
+    <Position>k__BackingField: {x: 13, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 658e24fc7ab528046973c61193d4379c, type: 2}
+    <Position>k__BackingField: {x: 13, y: -8}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: efadbfa2a3a1e1044818d37e26bf0bda, type: 2}
+    <Position>k__BackingField: {x: 13, y: -9}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 2b96951f4f596da44ad1a6fdb5601081, type: 2}
+    <Position>k__BackingField: {x: 13, y: -9}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d0165b0f58439b340b43abc68103008e, type: 2}
+    <Position>k__BackingField: {x: 14, y: -6}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: e78a76f019676454898fd833a88e5667, type: 2}
+    <Position>k__BackingField: {x: 14, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 4b72b78062696174b995943f0a8184b7, type: 2}
+    <Position>k__BackingField: {x: 14, y: -8}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 14, y: -9}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d56daf111f7129644be3df064b8d75d6, type: 2}
+    <Position>k__BackingField: {x: 18, y: -3}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 658e24fc7ab528046973c61193d4379c, type: 2}
+    <Position>k__BackingField: {x: 18, y: -4}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 18, y: -5}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: c9a298943ac66a2408c580fff0bc53b9, type: 2}
+    <Position>k__BackingField: {x: 18, y: -6}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 18, y: -9}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d56daf111f7129644be3df064b8d75d6, type: 2}
+    <Position>k__BackingField: {x: 18, y: -10}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 658e24fc7ab528046973c61193d4379c, type: 2}
+    <Position>k__BackingField: {x: 18, y: -11}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: efadbfa2a3a1e1044818d37e26bf0bda, type: 2}
+    <Position>k__BackingField: {x: 18, y: -12}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: e16940895f53e264e8f390d9aff07239, type: 2}
+    <Position>k__BackingField: {x: 19, y: -3}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 19, y: -4}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea532395fa79aa743bdf32ac010671ef, type: 2}
+    <Position>k__BackingField: {x: 19, y: -5}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 54d8302ed130eed42bca882d29fe3096, type: 2}
+    <Position>k__BackingField: {x: 19, y: -6}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 13dea13d672f227489dc0627c257beba, type: 2}
+    <Position>k__BackingField: {x: 19, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 658e24fc7ab528046973c61193d4379c, type: 2}
+    <Position>k__BackingField: {x: 19, y: -8}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea532395fa79aa743bdf32ac010671ef, type: 2}
+    <Position>k__BackingField: {x: 19, y: -9}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 703b17397e8097144a0d91798af2cd2a, type: 2}
+    <Position>k__BackingField: {x: 19, y: -10}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 393ccb72e0b0ff84cb8e27ab5350fce3, type: 2}
+    <Position>k__BackingField: {x: 19, y: -11}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 113b32be12d259746b2be840199d0e67, type: 2}
+    <Position>k__BackingField: {x: 19, y: -12}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 2b96951f4f596da44ad1a6fdb5601081, type: 2}
+    <Position>k__BackingField: {x: 19, y: -12}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: d0165b0f58439b340b43abc68103008e, type: 2}
+    <Position>k__BackingField: {x: 20, y: -3}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 9bfde9a5f3927694a90b7d719626dd0f, type: 2}
+    <Position>k__BackingField: {x: 20, y: -4}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: e78a76f019676454898fd833a88e5667, type: 2}
+    <Position>k__BackingField: {x: 20, y: -5}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 4b72b78062696174b995943f0a8184b7, type: 2}
+    <Position>k__BackingField: {x: 20, y: -6}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 145c1d790c54d0e4f8199b4a68945589, type: 2}
+    <Position>k__BackingField: {x: 20, y: -7}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 9bfde9a5f3927694a90b7d719626dd0f, type: 2}
+    <Position>k__BackingField: {x: 20, y: -8}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: e78a76f019676454898fd833a88e5667, type: 2}
+    <Position>k__BackingField: {x: 20, y: -9}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 4b72b78062696174b995943f0a8184b7, type: 2}
+    <Position>k__BackingField: {x: 20, y: -10}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 145c1d790c54d0e4f8199b4a68945589, type: 2}
+    <Position>k__BackingField: {x: 20, y: -11}
+    <Layer>k__BackingField: 0
+  - <Tile>k__BackingField: {fileID: 11400000, guid: 7e2d1fe195c7f8d4bbd78258734e9d9b, type: 2}
+    <Position>k__BackingField: {x: 20, y: -12}
+    <Layer>k__BackingField: 1
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 21, y: -6}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 22, y: 0}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: c9a298943ac66a2408c580fff0bc53b9, type: 2}
+    <Position>k__BackingField: {x: 23, y: 0}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 23, y: -1}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: ea1241a03ca8d054abada057e68225d1, type: 2}
+    <Position>k__BackingField: {x: 23, y: -14}
+    <Layer>k__BackingField: 2
+  - <Tile>k__BackingField: {fileID: 11400000, guid: c9a298943ac66a2408c580fff0bc53b9, type: 2}
+    <Position>k__BackingField: {x: 23, y: -15}
+    <Layer>k__BackingField: 2
