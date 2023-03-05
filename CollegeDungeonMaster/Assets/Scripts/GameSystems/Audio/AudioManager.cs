@@ -26,7 +26,7 @@ namespace GameSystems.Audio {
       }
 
       public void PlayOneShot(string name) {
-         if (!GetSoundByName(name, out Sound sound)) {
+         if (!TryGetSoundByName(name, out Sound sound)) {
             Debug.LogError($"Couldn't find a sound named {name}.");
             return;
          }
@@ -35,16 +35,17 @@ namespace GameSystems.Audio {
       }
 
       public void Play(string name) {
-         if (!GetSoundByName(name, out Sound sound)) {
+         if (!TryGetSoundByName(name, out Sound sound)) {
             Debug.LogError($"Couldn't find a sound named {name}.");
             return;
          }
             
          sound.AudioSource.Play();
+         sound.AudioSource.loop = true;
       }
 
       public void Stop(string name) {
-         if (!GetSoundByName(name, out Sound sound)) {
+         if (!TryGetSoundByName(name, out Sound sound)) {
             Debug.LogError($"Couldn't find a sound named {name}.");
             return;
          }
@@ -58,7 +59,16 @@ namespace GameSystems.Audio {
          }
       }
 
-      private bool GetSoundByName(string name, out Sound sound) {
+      public bool IsPlaying(string name) {
+         if (!TryGetSoundByName(name, out Sound sound)) {
+            Debug.LogError($"Couldn't find a sound named {name}.");
+            return false;
+         }
+
+         return sound.AudioSource.isPlaying;
+      }
+
+      private bool TryGetSoundByName(string name, out Sound sound) {
          sound = sounds.FirstOrDefault(sound => sound.Name == name);
 
          return sound is not null;

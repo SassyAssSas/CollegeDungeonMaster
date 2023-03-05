@@ -26,6 +26,8 @@ namespace Entities.Controllers {
 
       private int health;
 
+      private bool justGotHit;
+
       public void Initialize(Enemy enemy) {
          if (enemy == null) {
             Debug.LogError("Enemy type was null.");
@@ -67,6 +69,7 @@ namespace Entities.Controllers {
             return;
 
          health -= damage;
+         justGotHit = true;
 
          StopAllCoroutines();
          StartCoroutine(HitBehaviour());
@@ -247,7 +250,13 @@ namespace Entities.Controllers {
          yield return new WaitForSeconds(Random.Range(0.5f, 1.5f));
 
          while (true) {
-            yield return new WaitForSeconds(shooter.Gun.ReloadTimeSeconds + Random.Range(0, 0.75f));
+            var reloadTime = justGotHit
+               ? 0f
+               : shooter.Gun.ReloadTimeSeconds + Random.Range(0f, 0.5f);
+
+            justGotHit = false;
+
+            yield return new WaitForSeconds(reloadTime);
             yield return new WaitUntil(SeesPlayer);
 
             var facingModifier = transform.localScale.x < 0 ? -1f : 1f;

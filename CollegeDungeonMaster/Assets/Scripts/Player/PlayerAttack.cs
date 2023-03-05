@@ -124,12 +124,12 @@ public class PlayerAttack : MonoBehaviour {
             if (gun.BulletsLeft == -1)
                gun.BulletsLeft = gun.Ammo;
 
-            BarsManager.Instance.AmmoBar.SetFillingValue(gun.BulletsLeft / (float)gun.Ammo);
+            GameUI.Instance.Bars.AmmoBar.SetFillingValue(gun.BulletsLeft / (float)gun.Ammo);
             attackAction = GunAttack;
             break;
 
          case Sword:
-            BarsManager.Instance.AmmoBar.SetFillingValue(1f);
+            GameUI.Instance.Bars.AmmoBar.SetFillingValue(1f);
             attackAction = SwordAttack;
             break;
 
@@ -179,7 +179,7 @@ public class PlayerAttack : MonoBehaviour {
 
             AudioManager.Instance.PlayOneShot("ReloadFinished");
 
-            BarsManager.Instance.AmmoBar.SetFillingValue(1f);
+            GameUI.Instance.Bars.AmmoBar.SetFillingValue(1f);
 
             canShoot = true;
          }
@@ -207,7 +207,7 @@ public class PlayerAttack : MonoBehaviour {
          canShoot = false;
 
          gun.BulletsLeft--;
-         BarsManager.Instance.AmmoBar.SetFillingValue(gun.BulletsLeft / (float)gun.Ammo);
+         GameUI.Instance.Bars.AmmoBar.SetFillingValue(gun.BulletsLeft / (float)gun.Ammo);
 
          if (gun.BulletsLeft > 0) {
             yield return new WaitForSeconds(gun.ShootCooldownSeconds);
@@ -218,7 +218,7 @@ public class PlayerAttack : MonoBehaviour {
    }
 
    private IEnumerator SwordAttack() {
-      var sword = Weapon as Sword;
+      // var sword = Weapon as Sword;
       yield return null;
    }
 }

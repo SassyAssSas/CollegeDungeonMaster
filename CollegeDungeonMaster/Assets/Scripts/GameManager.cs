@@ -56,7 +56,8 @@ public class GameManager : MonoBehaviour {
          DungeonManager.Instance.GenerateDungeon();
          Time.timeScale = 1f;
 
-         AudioManager.Instance.Play("DungeonTheme");
+         if (!AudioManager.Instance.IsPlaying("DungeonTheme"))
+            AudioManager.Instance.Play("DungeonTheme");
 
          SceneLoader.Instance.OnSceneLoad -= OnSceneLoad;
       }
@@ -88,7 +89,7 @@ public class GameManager : MonoBehaviour {
          Screen.SetResolution(1440, 1080, true);
    }
 
-   public void LoadTheGame() {
+   public void LoadGame() {
       UpdateGameState(GameState.Loading);
 
       foreach (var gameObject in createOnRunStart) {

@@ -3,6 +3,7 @@ using UI;
 
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerAttack))]
+[RequireComponent(typeof(PlayerAnimation))]
 public class Player : MonoBehaviour {
    private Player() { }
 
@@ -32,7 +33,6 @@ public class Player : MonoBehaviour {
    private void Awake() {
       if (Instance == null) {
          Instance = this;
-         DontDestroyOnLoad(this);
 
          Movement = GetComponent<PlayerMovement>();
          Attack = GetComponent<PlayerAttack>();
@@ -54,10 +54,10 @@ public class Player : MonoBehaviour {
    }
 
    public void DealDamage(int damage) {
-      if (PlayerHealth > 0) {
-         PlayerHealth -= damage;
+     // PlayerHealth -= damage;
 
-         BarsManager.Instance.HealthBar.SetFillingValue(PlayerHealth / (float)MaxHealth);
+      if (PlayerHealth > 0) {
+         GameUI.Instance.Bars.HealthBar.SetFillingValue(PlayerHealth / (float)MaxHealth);
 
          OnPlayerHit?.Invoke();
       }
@@ -65,6 +65,10 @@ public class Player : MonoBehaviour {
          Movement.DisableInput();
          Attack.DisableInput();
          AnimationController.DisableInput();
+
+         PauseManager.Instance.DisableInput();
+
+         GameUI.Instance.GameOver.Panel.SetActive(true);
 
          OnPlayerDeath?.Invoke();
       }      

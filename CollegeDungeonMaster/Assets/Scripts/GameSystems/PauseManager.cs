@@ -41,6 +41,12 @@ public class PauseManager : MonoBehaviour {
       input.Disable();
    }
 
+   public void EnableInput()
+      => input.Enable();
+
+   public void DisableInput()
+      => input.Disable();
+
    private void OnDestroy() {
       _resumeButton.onClick.RemoveListener(OnResumeButtonPressed);
       _exitButton.onClick.RemoveListener(OnExitButtonPressed);

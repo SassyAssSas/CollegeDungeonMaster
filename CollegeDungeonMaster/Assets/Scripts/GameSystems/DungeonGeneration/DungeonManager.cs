@@ -5,7 +5,6 @@ using UnityEngine.Tilemaps;
 using GameSystems.DungeonGeneration.ScriptableObjects;
 using Entities.ScriptableObjects.Enemies;
 using Entities.Controllers;
-using System.Collections;
 
 namespace GameSystems.DungeonGeneration {
    public class DungeonManager : MonoBehaviour {
@@ -91,6 +90,8 @@ namespace GameSystems.DungeonGeneration {
       [SerializeField] private EnemyController enemyPrefab;
       [SerializeField] private Enemy[] enemyTypes;
 
+      [SerializeField] private FinishPortal _finishPortal;
+
       private TilemapCollider2D _spikesCollider;
 
       private const int maxRoomSideLength = 2;
@@ -161,6 +162,10 @@ namespace GameSystems.DungeonGeneration {
                if (!visitedRooms.Any(room => room.Fragments.Any(fragment => fragment.Position == currentRoomFragmentPosition))) {
                   StartBattle();
                   visitedRooms.Add(CurrentRoom);
+
+                  // Summon the portal if all the rooms were visited
+                  if (visitedRooms.Count == generatedRooms.Count) 
+                     _finishPortal.gameObject.SetActive(true);
                }
             }
          }
@@ -729,6 +734,7 @@ namespace GameSystems.DungeonGeneration {
          _backgroundWalls.ClearAllTiles();
          _decorations.ClearAllTiles();
          _foregroundWalls.ClearAllTiles();
+         _spikes.ClearAllTiles();
       }
 
       private enum RoomFragmentSampleType {
