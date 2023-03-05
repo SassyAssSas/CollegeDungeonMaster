@@ -3,8 +3,7 @@ using UnityEngine.InputSystem;
 using GameSystems.SceneLoading;
 using GameSystems.DungeonGeneration;
 using GameSystems.Navigation;
-using System.Threading.Tasks;
-using System.Collections.Generic;
+using GameSystems.Audio;
 
 public class GameManager : MonoBehaviour {
    private GameManager() { }
@@ -57,6 +56,8 @@ public class GameManager : MonoBehaviour {
          DungeonManager.Instance.GenerateDungeon();
          Time.timeScale = 1f;
 
+         AudioManager.Instance.Play("DungeonTheme");
+
          SceneLoader.Instance.OnSceneLoad -= OnSceneLoad;
       }
    }
@@ -67,6 +68,8 @@ public class GameManager : MonoBehaviour {
 
       static void OnSceneLoad() {
          Time.timeScale = 1f;
+
+         AudioManager.Instance.StopAllSounds();
 
          SceneLoader.Instance.OnSceneLoad -= OnSceneLoad;
       }
