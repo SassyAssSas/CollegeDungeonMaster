@@ -203,7 +203,7 @@ namespace GameSystems.DungeonGeneration {
             var enemy = Instantiate(enemyPrefab, spawnPoint, new Quaternion());
 
             var index = Random.Range(0, enemyTypes.Length);
-            enemy.Initialize(enemyTypes[index], CurrentRoom);
+            enemy.Initialize(enemyTypes[index]);
 
             // Since enemy object will be destroyed we don't need to worry about unsigning
             enemy.OnDeath += () => {

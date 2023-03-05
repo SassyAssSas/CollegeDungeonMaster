@@ -18,7 +18,7 @@ MonoBehaviour:
   <GunpointOffset>k__BackingField: {x: 0.4, y: 0.3}
   <BulletsPerShot>k__BackingField: 1
   <AngleBetweenBullets>k__BackingField: 0
-  <ShootCooldownSeconds>k__BackingField: 0.1
+  <ShootCooldownSeconds>k__BackingField: 0.25
   <Ammo>k__BackingField: 5
   <ReloadTimeSeconds>k__BackingField: 1.3
   <ShootSoundName>k__BackingField: DefaultShoot

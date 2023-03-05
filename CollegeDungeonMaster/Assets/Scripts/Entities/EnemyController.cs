@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using Entities.ScriptableObjects.Enemies;
 using GameSystems.DungeonGeneration;
@@ -16,15 +15,19 @@ namespace Entities.Controllers {
 
       [SerializeField] private SpriteRenderer _weaponDisplay;
 
+      private delegate IEnumerator EnemyBehaviour();
+      private EnemyBehaviour enemyBehaviour;
+
+      public delegate void EnemyAction();
+      public event EnemyAction OnDeath;
+
       private Rigidbody2D _rb;
       private SpriteRenderer _sr;
       private Animator _animator;
 
       private int health;
 
-      public event System.Action OnDeath;
-
-      public void Initialize(Enemy enemy, Room room) {
+      public void Initialize(Enemy enemy) {
          if (enemy == null) {
             Debug.LogError("Enemy type was null.");
             Destroy(gameObject);
@@ -41,6 +44,7 @@ namespace Entities.Controllers {
                _sr.sprite = shooter.Sprite;
                _weaponDisplay.sprite = shooter.Gun.Sprite;
 
+               enemyBehaviour += ShooterBehaviour;
                StartCoroutine(ShooterBehaviour());
                break;
 
@@ -67,12 +71,11 @@ namespace Entities.Controllers {
       private IEnumerator ShooterAnimate(Shooter shooter) {
          _animator.runtimeAnimatorController = shooter.AnimatorController;
 
-         while (true) {
-            // Animating
-            if (shooter.AnimatorController != null) {
-               _animator.Play("Running");
-            }
+         if (shooter.AnimatorController != null) {
+            _animator.Play("Running");
+         }
 
+         while (true) {
             // Rotating the body
             var scaleX = Player.Instance.transform.position.x > transform.position.x ? 1f : -1f;
 
@@ -268,10 +271,28 @@ namespace Entities.Controllers {
 
          health -= damage;
 
-         if (health <= 0) {
+         StopAllCoroutines();
+         StartCoroutine(HitBehaviour());
+      }
+
+      private IEnumerator HitBehaviour() {
+         if (health > 0) {
+            _animator.Play("Hit");
+            _rb.velocity = Vector2.zero;
+
+            yield return new WaitForSeconds(0.25f);
+
+            StartCoroutine(enemyBehaviour.Method.Name);
+         }
+         else {
+            _animator.Play("Hit");
+
+            yield return new WaitForSeconds(0.15f);
+
             OnDeath?.Invoke();
+
             Destroy(gameObject);
-         }   
+         }
       }
    }
 }

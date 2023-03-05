@@ -18,6 +18,10 @@ public class PlayerAnimation : MonoBehaviour {
       _animator.Play("Idle");
    }
 
+   private void Start() {
+      Player.Instance.OnPlayerGotHit += OnPlayerHit;
+   }
+
    private void OnEnable() {
       input.Enable();
    }
@@ -27,12 +31,13 @@ public class PlayerAnimation : MonoBehaviour {
    }
 
    private void OnDestroy() {
-      if (input is null)
-         return;
+      Player.Instance.OnPlayerGotHit -= OnPlayerHit;
 
-      input.Player.Movement.performed -= OnMovementPerformed;
-      input.Player.Movement.canceled -= OnMovementCanceled;
-      input.Dispose();
+      if (input is not null) {
+         input.Player.Movement.performed -= OnMovementPerformed;
+         input.Player.Movement.canceled -= OnMovementCanceled;
+         input.Dispose();
+      }
    }
 
    private void Update() {
@@ -56,6 +61,14 @@ public class PlayerAnimation : MonoBehaviour {
    public void Disable() {
       input.Disable();
       rotatePlayer = false;
+   }
+
+   public void OnPlayerHit() {
+      _animator.Play("Hit");
+   }
+
+   public void OnPlayerDeath() {
+      Debug.Log("No death animation");
    }
 
    private void OnMovementPerformed(InputAction.CallbackContext context) {

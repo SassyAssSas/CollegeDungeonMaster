@@ -1335,7 +1335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter A_58
+      name: Hit 0
       rect:
         serializedVersion: 2
         x: 0
@@ -1356,7 +1356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter A_59
+      name: Hit 1
       rect:
         serializedVersion: 2
         x: 48
@@ -1377,7 +1377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter A_60
+      name: Hit 2
       rect:
         serializedVersion: 2
         x: 96
@@ -1398,7 +1398,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter A_61
+      name: Hit 3
       rect:
         serializedVersion: 2
         x: 144
@@ -1598,26 +1598,25 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Shooter A_52: 727393699
-      Shooter A_21: 363370076
+      Shooter A_64: 169940220
       Shooter A_33: 547333924
       Shooter A_30: -1953030525
-      Shooter A_58: 928822999
-      Shooter A_32: 666894822
       Walk 4: -240910835
+      Shooter A_32: 666894822
+      Run 5: 999962659
       Shooter A_47: 831880067
       Idle 4: 2051910385
       Run 2: -778249958
+      Hit 3: 1743520794
       Idle 5: 471555664
       Shooter A_49: -768610818
       Shooter A_35: -1703634791
       Shooter A_41: -847228179
       Run 3: -1460363882
-      Run 5: 999962659
       Shooter A_40: -1559740960
       Shooter A_57: 83769052
       Shooter A_22: 488298905
       Shooter A_68: -1536259852
-      Shooter A_60: 1774829112
       Shooter A_65: 1250353550
       Shooter A_19: 1634612203
       Shooter A_38: 509724608
@@ -1630,7 +1629,6 @@ TextureImporter:
       Shooter A_36: 771374319
       Shooter A_56: -1016343830
       Idle 1: -1006663586
-      Shooter A_61: 1743520794
       Shooter A_27: 1772660048
       Shooter A_24: 1492432789
       Shooter A_37: -837311681
@@ -1638,13 +1636,13 @@ TextureImporter:
       Walk 5: -1316003043
       Run 0: 473330806
       Idle 0: -1298940460
+      Hit 1: 199874736
       Shooter A_29: -837974119
-      Shooter A_59: 199874736
+      Shooter A_63: -261973425
       Walk 1: 1767200910
       Shooter A_23: -1054930710
       Shooter A_43: 1640921144
       Shooter A_20: 1323439159
-      Shooter A_63: -261973425
       Shooter A_31: -1790584907
       Idle 3: 418465434
       Shooter A_25: -917320580
@@ -1653,9 +1651,11 @@ TextureImporter:
       Shooter A_26: 174310561
       Shooter A_42: -1527329930
       Shooter A_51: -974861190
+      Hit 0: 928822999
       Shooter A_50: 603727812
       Shooter A_46: 1039997319
       Shooter A_53: -582565738
+      Hit 2: 1774829112
       Shooter A_18: -1380666905
       Shooter A_39: -1028272435
       Walk 2: -931797049
@@ -1666,7 +1666,7 @@ TextureImporter:
       Shooter A_62: -330103254
       Shooter A_44: -2087238654
       Walk 0: 239242291
-      Shooter A_64: 169940220
+      Shooter A_21: 363370076
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

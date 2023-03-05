@@ -1314,7 +1314,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_58
+      name: Hit 0
       rect:
         serializedVersion: 2
         x: 0
@@ -1335,7 +1335,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_59
+      name: Hit 1
       rect:
         serializedVersion: 2
         x: 48
@@ -1356,7 +1356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_60
+      name: Hit 2
       rect:
         serializedVersion: 2
         x: 96
@@ -1377,7 +1377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_61
+      name: Hit 3
       rect:
         serializedVersion: 2
         x: 144
@@ -1398,7 +1398,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_62
+      name: Death 0
       rect:
         serializedVersion: 2
         x: 0
@@ -1419,10 +1419,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_63
+      name: Death 1
       rect:
         serializedVersion: 2
-        x: 48
+        x: 47
         y: 0
         width: 48
         height: 48
@@ -1440,7 +1440,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_64
+      name: Death 2
       rect:
         serializedVersion: 2
         x: 96
@@ -1461,7 +1461,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_65
+      name: Death 3
       rect:
         serializedVersion: 2
         x: 144
@@ -1482,7 +1482,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_66
+      name: Death 4
       rect:
         serializedVersion: 2
         x: 192
@@ -1503,7 +1503,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_67
+      name: Death 5
       rect:
         serializedVersion: 2
         x: 240
@@ -1524,7 +1524,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_68
+      name: Death 6
       rect:
         serializedVersion: 2
         x: 288
@@ -1545,7 +1545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Knight_69
+      name: Death  7
       rect:
         serializedVersion: 2
         x: 336
@@ -1578,7 +1578,7 @@ TextureImporter:
     nameFileIdTable:
       Knight_43: 1526816897
       Knight_25: 1840649955
-      Knight_67: -100823558
+      Hit 3: 1528054446
       Knight_33: -173983744
       Knight_35: -151581549
       Idle_4: -1992316305
@@ -1591,15 +1591,10 @@ TextureImporter:
       Walk_5: -99255417
       Knight_54: 1934556145
       Knight_51: 425369449
-      Knight_58: -1458263734
-      Knight_60: 808404117
+      Idle_3: -72271437
       Walk_4: 53266275
       Run_1: 414731311
-      Idle_3: -72271437
-      Knight_63: -920004109
       Knight_24: -851888940
-      Knight_64: 289013155
-      Knight_66: -1060081748
       Knight_39: 1128068033
       Knight_53: 1903604751
       Knight_19: 1983802472
@@ -1607,37 +1602,42 @@ TextureImporter:
       Walk_2: -1062848683
       Knight_55: 16473832
       Walk_3: 672397560
-      Knight_68: 42699566
-      Walk_1: -760761821
       Run_3: -31353761
+      Walk_1: -760761821
       Knight_52: -1618935978
       Knight_45: 578883747
-      Knight_61: 1528054446
+      Hit 1: -1467980573
       Knight_18: -2133159263
       Knight_22: 873032729
       Knight_56: 1921474507
       Knight_37: 1310775978
+      Death 6: 42699566
       Knight_28: -1076808351
       Knight_40: 584929549
       Idle_1: -1237970945
+      Death 4: -1060081748
       Knight_36: 1521179814
       Knight_34: 1057592606
       Walk_0: 861194904
+      Death 0: -1222655870
       Knight_31: 1943535088
       Knight_32: 1317358647
-      Knight_69: -2091918586
-      Knight_65: 2122740185
+      Death 3: 2122740185
       Idle_5: 536119255
+      Death 2: 289013155
       Idle_0: 74871576
       Knight_29: 2066078208
       Knight_20: 386740036
       Knight_38: -1867200372
       Knight_47: -1050751869
       Knight_30: -1927516609
+      Hit 2: 808404117
+      Hit 0: -1458263734
+      Death 1: -920004109
       Knight_57: -1643460540
       Knight_49: 1695666368
-      Knight_62: -1222655870
-      Knight_59: -1467980573
+      Death  7: -2091918586
+      Death 5: -100823558
       Knight_46: 1172230187
       Knight_23: -88368015
       Idle_2: -266782151

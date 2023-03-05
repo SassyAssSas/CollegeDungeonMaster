@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour {
    }
 
    public void OnRoomChange(Room room, RoomFragment fragment, Vector3 relativeDirection) {
-      transform.position += relativeDirection * 0.5f;
+      transform.position += relativeDirection;
    }
 
    public void Enable()

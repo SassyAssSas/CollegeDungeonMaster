@@ -12,6 +12,9 @@ public class Player : MonoBehaviour {
    public PlayerAttack Attack { get; private set; }
    public PlayerAnimation AnimationController { get; private set; }
 
+   public delegate void PlayerAction();
+   public event PlayerAction OnPlayerGotHit;
+
    public int MaxHealth {
       get => _maxHealth;
       set {
@@ -50,13 +53,16 @@ public class Player : MonoBehaviour {
    }
 
    public void DealDamage(int damage) {
-      PlayerHealth -= damage;
-      BarsManager.Instance.HealthBar.SetFillingValue(PlayerHealth / (float)MaxHealth);
+      if (PlayerHealth > 0) {
+         PlayerHealth -= damage;
 
-      if (PlayerHealth > 0)
-         return;
+         BarsManager.Instance.HealthBar.SetFillingValue(PlayerHealth / (float)MaxHealth);
 
-      Debug.Log("You're dead lol");
+         OnPlayerGotHit?.Invoke();
+      }
+      else {
+         Debug.Log("You're dead lol");
+      }      
    }
 
    private void OnGameStateChange(GameManager.GameState state) {
