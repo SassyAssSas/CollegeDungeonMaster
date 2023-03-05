@@ -52,6 +52,10 @@ public class PlayerAttack : MonoBehaviour {
       StartCoroutine(attackAction.Method.Name);
    }
 
+   private void Start() {
+      Player.Instance.OnPlayerDeath += OnPlayerDeath;
+   }
+
    private void OnEnable() {
       input.Enable();
    }
@@ -61,12 +65,13 @@ public class PlayerAttack : MonoBehaviour {
    }
 
    private void OnDestroy() {
-      if (input is null)
-         return;
+      Player.Instance.OnPlayerDeath -= OnPlayerDeath;
 
-      input.Player.Reload.performed -= OnReloadPerformed;
-      input.Player.Attack.performed -= OnAttackPerformed;
-      input.Dispose();
+      if (input is not null) {
+         input.Player.Reload.performed -= OnReloadPerformed;
+         input.Player.Attack.performed -= OnAttackPerformed;
+         input.Dispose();
+      }
    }
 
    private void Update() {
@@ -96,32 +101,14 @@ public class PlayerAttack : MonoBehaviour {
       _weaponDisplay.transform.rotation = Quaternion.FromToRotation(fromDirection, direction);
    }
 
-   public void Enable() {
+   public void EnableInput() {
       input.Enable();
       rotateWeapon = true;
    }
   
-   public void Disable() {
+   public void DisableInput() {
       input.Disable();
       rotateWeapon = false;
-   }
-
-   private void OnReloadPerformed(InputAction.CallbackContext context) {
-      Debug.Log("Reload not implemented yet");
-   }
-
-   private void OnAttackPerformed(InputAction.CallbackContext context) {
-      if (canShoot)
-         attackPerformed = true;
-   }
-
-   private bool AttackPerformed() {
-      if (attackPerformed) {
-         attackPerformed = false;
-         return true;
-      }
-
-      return false;
    }
 
    public void SetWeapon(Weapon newWeapon) {
@@ -149,12 +136,33 @@ public class PlayerAttack : MonoBehaviour {
          default:
             throw new System.Exception("Not implemented weapon behaviour.");
       }
-      
+
       attackPerformed = false;
       canShoot = true;
 
       StopAllCoroutines();
       StartCoroutine(attackAction.Method.Name);
+   }
+
+   private void OnReloadPerformed(InputAction.CallbackContext context) {
+      Debug.Log("Reload not implemented yet");
+   }
+
+   private void OnAttackPerformed(InputAction.CallbackContext context) {
+      if (canShoot)
+         attackPerformed = true;
+   }
+
+   private void OnPlayerDeath()
+      => _weaponDisplay.gameObject.SetActive(false); 
+
+   private bool AttackPerformed() {
+      if (attackPerformed) {
+         attackPerformed = false;
+         return true;
+      }
+
+      return false;
    }
 
    private IEnumerator GunAttack() {

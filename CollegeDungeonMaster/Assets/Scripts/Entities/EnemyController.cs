@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Entities.ScriptableObjects.Enemies;
-using GameSystems.DungeonGeneration;
 using GameSystems.Navigation;
 using GameSystems.Audio;
 using GameSystems;
@@ -53,6 +52,24 @@ namespace Entities.Controllers {
          }
 
          health = enemy.Health;
+      }
+
+      public void Start() {
+         Player.Instance.OnPlayerDeath += OnPlayerDeath;
+      }
+
+      public void OnDestroy() {
+         Player.Instance.OnPlayerDeath -= OnPlayerDeath;
+      }
+
+      public void DealDamage(int damage) {
+         if (health <= 0)
+            return;
+
+         health -= damage;
+
+         StopAllCoroutines();
+         StartCoroutine(HitBehaviour());
       }
 
       private IEnumerator ShooterBehaviour() {
@@ -265,16 +282,6 @@ namespace Entities.Controllers {
          return false;
       }
 
-      public void DealDamage(int damage) {
-         if (health <= 0)
-            return;
-
-         health -= damage;
-
-         StopAllCoroutines();
-         StartCoroutine(HitBehaviour());
-      }
-
       private IEnumerator HitBehaviour() {
          if (health > 0) {
             _animator.Play("Hit");
@@ -293,6 +300,13 @@ namespace Entities.Controllers {
 
             Destroy(gameObject);
          }
+      }
+
+      private void OnPlayerDeath() {
+         StopAllCoroutines();
+
+         _animator.Play("Idle");
+         _rb.simulated = false;
       }
    }
 }

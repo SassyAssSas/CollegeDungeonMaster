@@ -19,7 +19,8 @@ public class PlayerAnimation : MonoBehaviour {
    }
 
    private void Start() {
-      Player.Instance.OnPlayerGotHit += OnPlayerHit;
+      Player.Instance.OnPlayerHit += OnPlayerHit;
+      Player.Instance.OnPlayerDeath += OnPlayerDeath;
    }
 
    private void OnEnable() {
@@ -31,7 +32,8 @@ public class PlayerAnimation : MonoBehaviour {
    }
 
    private void OnDestroy() {
-      Player.Instance.OnPlayerGotHit -= OnPlayerHit;
+      Player.Instance.OnPlayerHit -= OnPlayerHit;
+      Player.Instance.OnPlayerDeath -= OnPlayerDeath;
 
       if (input is not null) {
          input.Player.Movement.performed -= OnMovementPerformed;
@@ -53,12 +55,12 @@ public class PlayerAnimation : MonoBehaviour {
          transform.localScale = new Vector3(playerXScale, 1f, 1f);
    }
 
-   public void Enable() {
+   public void EnableInput() {
       input.Enable();
       rotatePlayer = true;
    }
 
-   public void Disable() {
+   public void DisableInput() {
       input.Disable();
       rotatePlayer = false;
    }
@@ -68,7 +70,7 @@ public class PlayerAnimation : MonoBehaviour {
    }
 
    public void OnPlayerDeath() {
-      Debug.Log("No death animation");
+      _animator.Play("Death");
    }
 
    private void OnMovementPerformed(InputAction.CallbackContext context) {

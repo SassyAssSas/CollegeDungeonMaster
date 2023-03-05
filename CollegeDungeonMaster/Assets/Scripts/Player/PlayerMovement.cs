@@ -52,13 +52,12 @@ public class PlayerMovement : MonoBehaviour {
       _rb.velocity = new Vector2(xMovement, yMovement);
    }
 
-   public void OnRoomChange(Room room, RoomFragment fragment, Vector3 relativeDirection) {
-      transform.position += relativeDirection;
-   }
+   public void OnRoomChange(Room room, RoomFragment fragment, Vector3 relativeDirection) 
+      => transform.position += relativeDirection;
 
-   public void Enable()
+   public void EnableInput()
       => input.Enable();
 
-   public void Disable()
+   public void DisableInput()
       => input.Disable();
 }

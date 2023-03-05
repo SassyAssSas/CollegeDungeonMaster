@@ -1545,7 +1545,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Death  7
+      name: Death 7
       rect:
         serializedVersion: 2
         x: 336
@@ -1597,6 +1597,7 @@ TextureImporter:
       Knight_24: -851888940
       Knight_39: 1128068033
       Knight_53: 1903604751
+      Death 7: -2091918586
       Knight_19: 1983802472
       Knight_42: -758944156
       Walk_2: -1062848683
@@ -1610,8 +1611,8 @@ TextureImporter:
       Knight_18: -2133159263
       Knight_22: 873032729
       Knight_56: 1921474507
-      Knight_37: 1310775978
       Death 6: 42699566
+      Knight_37: 1310775978
       Knight_28: -1076808351
       Knight_40: 584929549
       Idle_1: -1237970945
@@ -1636,7 +1637,6 @@ TextureImporter:
       Death 1: -920004109
       Knight_57: -1643460540
       Knight_49: 1695666368
-      Death  7: -2091918586
       Death 5: -100823558
       Knight_46: 1172230187
       Knight_23: -88368015

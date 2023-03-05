@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shooter B_0
+      name: Idle 0
       rect:
         serializedVersion: 2
         x: 0
@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter B_1
+      name: Idle 1
       rect:
         serializedVersion: 2
         x: 48
@@ -159,7 +159,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter B_2
+      name: Idle 2
       rect:
         serializedVersion: 2
         x: 96
@@ -180,7 +180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter B_3
+      name: idle 3
       rect:
         serializedVersion: 2
         x: 144
@@ -201,7 +201,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter B_4
+      name: idle 4
       rect:
         serializedVersion: 2
         x: 192
@@ -222,7 +222,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter B_5
+      name: Idle 5
       rect:
         serializedVersion: 2
         x: 240
@@ -1602,21 +1602,19 @@ TextureImporter:
       Shooter B_34: -963601306
       Shooter B_45: 1948787773
       Hit 3: -1255280942
-      Shooter B_69: -291983421
       Run 5: -296446501
       Run 2: 281082808
+      Idle 5: -1649130647
       Run 3: -2099105944
       Shooter B_18: -2142515157
       Shooter B_41: -1961115029
       Shooter B_68: -388781088
       Shooter B_26: 1956686629
       Shooter B_65: -1045559816
-      Shooter B_22: -695578026
+      idle 3: 1564249351
       Shooter B_44: 1658034448
-      Shooter B_4: 436104048
-      Shooter B_37: -2089615100
       Shooter B_25: -764568813
-      Shooter B_0: -2113072595
+      Shooter B_37: -2089615100
       Shooter B_52: -1415585409
       Shooter B_35: -1489501566
       Shooter B_63: -549787912
@@ -1624,19 +1622,21 @@ TextureImporter:
       Shooter B_66: -1708423291
       Shooter B_64: 1900762435
       Shooter B_40: 1586150837
+      Idle 1: 508479224
       Shooter B_57: 651641917
       Shooter B_49: 1394893470
+      idle 4: 436104048
       Shooter B_19: -1154710133
       Walk 5: -490904261
       Shooter B_47: 969814865
       Shooter B_51: -2050072455
       Shooter B_56: 1241489468
-      Shooter B_2: -1177456413
       Run 0: 1587382578
+      Idle 0: -2113072595
+      Hit 1: 16837807
       Shooter B_50: 1704753249
       Walk 1: 518883430
       Shooter B_20: -1018400890
-      Hit 1: 16837807
       Shooter B_62: 1051027192
       Shooter B_30: -2002325909
       Shooter B_46: 1432553070
@@ -1646,12 +1646,12 @@ TextureImporter:
       Shooter B_42: 1970022473
       Hit 0: 691428920
       Shooter B_32: -463033447
-      Shooter B_5: -1649130647
       Hit 2: 1189574760
       Shooter B_33: 1999171051
       Walk 2: 2049626045
       Run 4: 1725123666
       Run 1: 928478639
+      Idle 2: -1177456413
       Shooter B_38: 1057191196
       Shooter B_36: 1179514241
       Shooter B_27: -2039843037
@@ -1662,11 +1662,11 @@ TextureImporter:
       Shooter B_43: 501300803
       Shooter B_21: -304768541
       Shooter B_55: 679741350
-      Shooter B_3: 1564249351
       Shooter B_54: -1043492411
+      Shooter B_22: -695578026
       Shooter B_23: -1375898916
       Walk 0: 1398091502
-      Shooter B_1: 508479224
+      Shooter B_69: -291983421
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
