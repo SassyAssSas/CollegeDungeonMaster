@@ -31,12 +31,14 @@ namespace UI {
       }
 
       private void OnDestroy() {
+         Instance = null;
          GameManager.Instance.OnGameStateChange -= OnGameStateChange;
       }
 
       private void OnGameStateChange(GameManager.GameState state) {
          switch (state) {
             case GameManager.GameState.MainMenu:
+               Destroy(gameObject);
                break;
          }
       }

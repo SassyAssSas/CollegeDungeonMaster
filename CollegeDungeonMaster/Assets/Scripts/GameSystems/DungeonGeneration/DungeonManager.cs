@@ -174,7 +174,7 @@ namespace GameSystems.DungeonGeneration {
                   GameUI.Instance.Minimap.UpdateRoomState(CurrentRoom.TopLeftFragment.Position, Minimap.RoomState.Visited);
                }
 
-               GameUI.Instance.Minimap.MoveMap(-leaveDirection);
+               GameUI.Instance.Minimap.SetActiveRoom(CurrentRoom);
             }
          }
       }

@@ -89,14 +89,6 @@ public class GameManager : MonoBehaviour {
          Screen.SetResolution(1440, 1080, true);
    }
 
-   public void LoadGame() {
-      UpdateGameState(GameState.Loading);
-
-      foreach (var gameObject in createOnRunStart) {
-         Instantiate(gameObject);
-      }
-   }
-
    public enum GameState {
       MainMenu = 0,
       Loading = 1,

@@ -2,7 +2,6 @@ using GameSystems.DungeonGeneration;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
-using Unity.VisualScripting;
 using UnityEngine.UI;
 
 namespace UI {
@@ -22,18 +21,36 @@ namespace UI {
 
       private readonly Vector2Int roomSize = new(50, 50);
 
-      private readonly List<MinimapRoom> rooms = new();
+      private List<MinimapRoom> rooms;
 
-      public void MoveMap(Vector3Int direction) {
-         foreach (var room in rooms) {
-            room.gameObject.transform.position += direction * (Vector3Int)roomSize;
+      public void Awake() {
+         rooms = new();
+         rooms.Clear();
+      }
+
+      public void SetActiveRoom(Room room) {
+         var minimapRoom = rooms.FirstOrDefault(minimapRoom => minimapRoom.topLeftPosition == room.TopLeftFragment.Position);
+         if (minimapRoom == null) {
+            Debug.LogWarning("Couldn't find this room on the minimap");
+            return;
          }
 
-         offset += direction * (Vector3Int)roomSize;
+         var movement = Vector3Int.FloorToInt(offset - minimapRoom.gameObject.transform.localPosition);
+         // Scaling room size to the screen size so the rooms will be positioned correctly with different resolutions
+         var scaledmovement = new Vector3(
+            movement.x / 640f * Screen.width,
+            movement.y / 480f * Screen.height
+         );
+
+         foreach (var item in rooms) {
+            item.gameObject.transform.position += scaledmovement;
+         }
+
+         offset = Vector3Int.FloorToInt(minimapRoom.gameObject.transform.localPosition);
       }
 
       public void AddRoom(Room room, RoomState roomState = RoomState.NotVisited) {
-         if (rooms.Any(minimapRoom => minimapRoom.position == room.TopLeftFragment.Position)) {
+         if (rooms.Any(minimapRoom => minimapRoom.topLeftPosition == room.TopLeftFragment.Position)) {
             Debug.LogWarning("This room is aleady shown on the minimap");
             return;
          }
@@ -66,11 +83,11 @@ namespace UI {
 
          var minimapRoom = Instantiate(minimapRoomPrefab, _mask.transform.position + scaledPosition + offset + sizeOffset, new Quaternion(), _mask.transform);
 
-         rooms.Add(new(minimapRoom, room.TopLeftFragment.Position, size, roomState));
+         rooms.Add(new(minimapRoom, room.TopLeftFragment.Position, roomState));
       }
 
       public void UpdateRoomState(Vector3Int position, RoomState state) {
-         var room = rooms.FirstOrDefault(room => room.position == position);
+         var room = rooms.FirstOrDefault(room => room.topLeftPosition == position);
          if (room is null)
             return;
 
@@ -84,20 +101,13 @@ namespace UI {
       }
 
       private class MinimapRoom {
-         public MinimapRoom(Image gameObject, Vector3Int position, Vector2Int size, RoomState roomState) {
+         public MinimapRoom(Image gameObject, Vector3Int topLeftPosition, RoomState roomState) {
             this.gameObject = gameObject;
-            this.position = position;
-            this.size = size;
+            this.topLeftPosition = topLeftPosition;
             this.roomState = roomState;
          }
 
-         public void UpdateState(RoomState state) {
-            roomState = state;
-         }
-
-         public Vector3Int position;
-         public Vector2Int size;
-
+         public Vector3Int topLeftPosition;
          public Image gameObject;
 
          public RoomState roomState;

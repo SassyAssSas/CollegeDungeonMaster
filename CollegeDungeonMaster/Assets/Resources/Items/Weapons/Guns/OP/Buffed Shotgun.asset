@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Buffed Shotgun
   m_EditorClassIdentifier: 
   <Sprite>k__BackingField: {fileID: -1378331775, guid: f6e24a71696d9844dbca9092d1ad6a48, type: 3}
-  <Damage>k__BackingField: 5
+  <Damage>k__BackingField: 100
   <Bullet>k__BackingField: {fileID: 11400000, guid: cf495d096d4716448b06686445649e69, type: 2}
   <GunpointOffset>k__BackingField: {x: 1.2, y: 0.15}
-  <BulletsPerShot>k__BackingField: 5
-  <AngleBetweenBullets>k__BackingField: 9
+  <BulletsPerShot>k__BackingField: 8
+  <AngleBetweenBullets>k__BackingField: 5
   <ShootCooldownSeconds>k__BackingField: 0
   <Ammo>k__BackingField: 1
   <ReloadTimeSeconds>k__BackingField: 0.2

@@ -4396,7 +4396,7 @@ PrefabInstance:
     - target: {fileID: 3010776590665887704, guid: 1a2b9a64ef0812d48be587b2b711882d, type: 3}
       propertyPath: <Weapon>k__BackingField
       value: 
-      objectReference: {fileID: 11400000, guid: d0781f6e1ea51da48befb75bfe8fc88e, type: 2}
+      objectReference: {fileID: 11400000, guid: bc7ea9e5666ee0342870d769a12c9f24, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2b9a64ef0812d48be587b2b711882d, type: 3}
 --- !u!4 &7994298525225873178
