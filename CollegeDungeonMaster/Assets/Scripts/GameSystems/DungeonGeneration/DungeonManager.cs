@@ -5,6 +5,7 @@ using UnityEngine.Tilemaps;
 using GameSystems.DungeonGeneration.ScriptableObjects;
 using Entities.ScriptableObjects.Enemies;
 using Entities.Controllers;
+using UI;
 
 namespace GameSystems.DungeonGeneration {
    public class DungeonManager : MonoBehaviour {
@@ -153,12 +154,15 @@ namespace GameSystems.DungeonGeneration {
 
          // Update room if needed
          if (currentRoomFragmentPosition != previousPosition) {
+
+            // If changed room
             if (!CurrentRoom.Fragments.Any(fragment => fragment.Position == currentRoomFragmentPosition)) {
                CurrentRoom = generatedRooms.Where(room => room.Fragments.Any(fragment => fragment.Position == currentRoomFragmentPosition)).FirstOrDefault();
                var currentFragment = CurrentRoom.Fragments.Where(fragment => fragment.Position == currentRoomFragmentPosition).FirstOrDefault();
 
                OnRoomChange?.Invoke(CurrentRoom, currentFragment, leaveDirection);
 
+               // If haven't visited this room before
                if (!visitedRooms.Any(room => room.Fragments.Any(fragment => fragment.Position == currentRoomFragmentPosition))) {
                   StartBattle();
                   visitedRooms.Add(CurrentRoom);
@@ -166,7 +170,11 @@ namespace GameSystems.DungeonGeneration {
                   // Summon the portal if all the rooms were visited
                   if (visitedRooms.Count == generatedRooms.Count) 
                      _finishPortal.gameObject.SetActive(true);
+
+                  GameUI.Instance.Minimap.UpdateRoomState(CurrentRoom.TopLeftFragment.Position, Minimap.RoomState.Visited);
                }
+
+               GameUI.Instance.Minimap.MoveMap(-leaveDirection);
             }
          }
       }
@@ -244,6 +252,9 @@ namespace GameSystems.DungeonGeneration {
 
          generatedRooms.Add(startRoom);
          generatedRooms.Add(secondRoom);
+
+         // Marking start room as visited
+         GameUI.Instance.Minimap.UpdateRoomState(Vector3Int.zero, Minimap.RoomState.Visited);
 
          // Generating other rooms
          var exitFlags = System.Enum.GetValues(typeof(RoomFragment.Exit));
@@ -583,7 +594,9 @@ namespace GameSystems.DungeonGeneration {
 
             PlaceSavedTilemap(filling, fillingPosition);
          }
-         
+
+         GameUI.Instance.Minimap.AddRoom(room.TopLeftFragment.Position, (Vector2Int)size);
+
          return room;
       }
 

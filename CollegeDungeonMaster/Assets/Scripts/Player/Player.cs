@@ -33,6 +33,7 @@ public class Player : MonoBehaviour {
    private void Awake() {
       if (Instance == null) {
          Instance = this;
+         DontDestroyOnLoad(this);
 
          Movement = GetComponent<PlayerMovement>();
          Attack = GetComponent<PlayerAttack>();

@@ -3,6 +3,7 @@ using UnityEngine;
 namespace UI {
    [RequireComponent(typeof(BarsManager))]
    [RequireComponent(typeof(GameOver))]
+   [RequireComponent(typeof(Minimap))]
    public class GameUI : MonoBehaviour {
       private GameUI() { }
 
@@ -10,6 +11,7 @@ namespace UI {
 
       public BarsManager Bars { get; private set; }
       public GameOver GameOver { get; private set; }
+      public Minimap Minimap { get; private set; }
 
       private void Awake() {
          if (Instance == null) {
@@ -17,6 +19,7 @@ namespace UI {
 
             Bars = GetComponent<BarsManager>();
             GameOver = GetComponent<GameOver>();
+            Minimap = GetComponent<Minimap>();
          }
          else {
             Destroy(gameObject);
@@ -38,5 +41,4 @@ namespace UI {
          }
       }
    }
-
 }
