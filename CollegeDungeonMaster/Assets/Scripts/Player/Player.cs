@@ -33,7 +33,7 @@ public class Player : MonoBehaviour {
    private void Awake() {
       if (Instance == null) {
          Instance = this;
-         DontDestroyOnLoad(this);
+        // DontDestroyOnLoad(this);
 
          Movement = GetComponent<PlayerMovement>();
          Attack = GetComponent<PlayerAttack>();
@@ -55,11 +55,11 @@ public class Player : MonoBehaviour {
    }
 
    public void DealDamage(int damage) {
-     // PlayerHealth -= damage;
+      PlayerHealth -= damage;
+
+      GameUI.Instance.Bars.HealthBar.SetFillingValue(PlayerHealth / (float)MaxHealth);
 
       if (PlayerHealth > 0) {
-         GameUI.Instance.Bars.HealthBar.SetFillingValue(PlayerHealth / (float)MaxHealth);
-
          OnPlayerHit?.Invoke();
       }
       else {
