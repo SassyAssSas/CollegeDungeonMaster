@@ -44,8 +44,9 @@ namespace UI {
 
          minimapRoomPrefab.rectTransform.sizeDelta = size * roomSize;
 
-         var scaledPosition = new Vector3(position.x / DungeonManager.RoomFragmentSize.x * roomSize.x, position.y / DungeonManager.RoomFragmentSize.y * roomSize.y);
-         var sizeOffset = (size - Vector2.one) * roomSize / 2;
+         var scaledSize = new Vector2(roomSize.x / 640f * Screen.width, roomSize.y / 480f * Screen.height);
+         var scaledPosition = new Vector3(position.x / DungeonManager.RoomFragmentSize.x * scaledSize.x, position.y / DungeonManager.RoomFragmentSize.y * scaledSize.y);
+         var sizeOffset = (size - Vector2.one) * scaledSize / 2;
          sizeOffset.y = -sizeOffset.y;
 
          var room = Instantiate(minimapRoomPrefab, _mask.transform.position + scaledPosition + offset + (Vector3)sizeOffset, new Quaternion(), _mask.transform);
