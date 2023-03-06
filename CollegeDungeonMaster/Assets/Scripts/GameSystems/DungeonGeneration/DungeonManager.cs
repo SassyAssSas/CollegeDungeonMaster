@@ -595,7 +595,7 @@ namespace GameSystems.DungeonGeneration {
             PlaceSavedTilemap(filling, fillingPosition);
          }
 
-         GameUI.Instance.Minimap.AddRoom(room.TopLeftFragment.Position, (Vector2Int)size);
+         GameUI.Instance.Minimap.AddRoom(room);
 
          return room;
       }

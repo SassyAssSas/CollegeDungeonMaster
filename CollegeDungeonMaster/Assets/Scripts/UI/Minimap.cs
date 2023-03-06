@@ -32,9 +32,11 @@ namespace UI {
          offset += direction * (Vector3Int)roomSize;
       }
 
-      public void AddRoom(Vector3Int position, Vector2Int size, RoomState roomState = RoomState.NotVisited) {
-         if (rooms.Any(room => room.position == position))
+      public void AddRoom(Room room, RoomState roomState = RoomState.NotVisited) {
+         if (rooms.Any(minimapRoom => minimapRoom.position == room.TopLeftFragment.Position)) {
+            Debug.LogWarning("This room is aleady shown on the minimap");
             return;
+         }
 
          minimapRoomPrefab.sprite = roomState switch {
             RoomState.NotVisited => notVisitedRoomSprite,
@@ -42,16 +44,29 @@ namespace UI {
             _ => throw new System.Exception("Unhandled room state.")
          };
 
+         var size = new Vector2Int(room.Width, room.Height);
+
          minimapRoomPrefab.rectTransform.sizeDelta = size * roomSize;
 
-         var scaledSize = new Vector2(roomSize.x / 640f * Screen.width, roomSize.y / 480f * Screen.height);
-         var scaledPosition = new Vector3(position.x / DungeonManager.RoomFragmentSize.x * scaledSize.x, position.y / DungeonManager.RoomFragmentSize.y * scaledSize.y);
-         var sizeOffset = (size - Vector2.one) * scaledSize / 2;
+         // Scaling room size to the screen size so the rooms will be positioned correctly with different resolutions
+         var scaledSize = new Vector2(
+            roomSize.x / 640f * Screen.width,
+            roomSize.y / 480f * Screen.height
+         );
+
+         // Scaling position from real to minimap
+         var scaledPosition = new Vector3(
+            room.TopLeftFragment.Position.x / DungeonManager.RoomFragmentSize.x * scaledSize.x, 
+            room.TopLeftFragment.Position.y / DungeonManager.RoomFragmentSize.y * scaledSize.y
+         );
+
+         // Creating an offset for the room depending on its size to position it correctly
+         Vector3 sizeOffset = (size - Vector2.one) * scaledSize / 2;
          sizeOffset.y = -sizeOffset.y;
 
-         var room = Instantiate(minimapRoomPrefab, _mask.transform.position + scaledPosition + offset + (Vector3)sizeOffset, new Quaternion(), _mask.transform);
+         var minimapRoom = Instantiate(minimapRoomPrefab, _mask.transform.position + scaledPosition + offset + sizeOffset, new Quaternion(), _mask.transform);
 
-         rooms.Add(new(room, position, size, roomState));
+         rooms.Add(new(minimapRoom, room.TopLeftFragment.Position, size, roomState));
       }
 
       public void UpdateRoomState(Vector3Int position, RoomState state) {
