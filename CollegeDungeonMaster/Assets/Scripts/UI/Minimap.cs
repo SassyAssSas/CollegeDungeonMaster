@@ -8,7 +8,7 @@ namespace UI {
    public class Minimap : MonoBehaviour {
       [field: SerializeField] public GameObject Panel { get; private set; }
 
-      [SerializeField] private GameObject _mask;
+      [SerializeField] private GameObject _roomsContainer;
 
       [SerializeField] private Image minimapRoomPrefab;
 
@@ -17,7 +17,7 @@ namespace UI {
       [SerializeField] private Sprite clearedMark;
       [SerializeField] private Sprite portalMark;
 
-      private Vector3Int offset = Vector3Int.zero;
+      private Vector2 offset = Vector2.zero;
 
       private readonly Vector2Int roomSize = new(50, 50);
 
@@ -35,18 +35,12 @@ namespace UI {
             return;
          }
 
-         var movement = Vector3Int.FloorToInt(offset - minimapRoom.gameObject.transform.localPosition);
-         // Scaling room size to the screen size so the rooms will be positioned correctly with different resolutions
-         var scaledmovement = new Vector3(
-            movement.x / 640f * Screen.width,
-            movement.y / 480f * Screen.height
-         );
-
+         var movement = offset - minimapRoom.rectTransform.anchoredPosition;
          foreach (var item in rooms) {
-            item.gameObject.transform.position += scaledmovement;
+            item.rectTransform.anchoredPosition += movement;
          }
 
-         offset = Vector3Int.FloorToInt(minimapRoom.gameObject.transform.localPosition);
+         offset = minimapRoom.rectTransform.anchoredPosition;
       }
 
       public void AddRoom(Room room, RoomState roomState = RoomState.NotVisited) {
@@ -81,7 +75,7 @@ namespace UI {
          Vector3 sizeOffset = (size - Vector2.one) * scaledSize / 2;
          sizeOffset.y = -sizeOffset.y;
 
-         var minimapRoom = Instantiate(minimapRoomPrefab, _mask.transform.position + scaledPosition + offset + sizeOffset, new Quaternion(), _mask.transform);
+         var minimapRoom = Instantiate(minimapRoomPrefab, _roomsContainer.transform.position + scaledPosition + (Vector3)offset + sizeOffset, new Quaternion(), _roomsContainer.transform);
 
          rooms.Add(new(minimapRoom, room.TopLeftFragment.Position, roomState));
       }
@@ -93,7 +87,7 @@ namespace UI {
 
          room.roomState = state;
 
-         room.gameObject.sprite = state switch {
+         room.image.sprite = state switch {
             RoomState.NotVisited => notVisitedRoomSprite,
             RoomState.Visited => visitedRoomSprite,
             _ => throw new System.Exception("Unhandled room state.")
@@ -101,14 +95,17 @@ namespace UI {
       }
 
       private class MinimapRoom {
-         public MinimapRoom(Image gameObject, Vector3Int topLeftPosition, RoomState roomState) {
-            this.gameObject = gameObject;
+         public MinimapRoom(Image image, Vector3Int topLeftPosition, RoomState roomState) {
+            this.image = image;
             this.topLeftPosition = topLeftPosition;
             this.roomState = roomState;
+
+            rectTransform = image.GetComponent<RectTransform>();
          }
 
          public Vector3Int topLeftPosition;
-         public Image gameObject;
+         public Image image;
+         public RectTransform rectTransform;
 
          public RoomState roomState;
       }
