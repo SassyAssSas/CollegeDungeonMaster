@@ -87,6 +87,7 @@ namespace GameSystems.DungeonGeneration {
       [Header("Settings")]
       [SerializeField] private int generationIterations = 3;
       [SerializeField] private int minimumRoomsBeforeDeadEnds = 3;
+      [SerializeField] private int maxRoomsBeforeDeadEnds = 6;
 
       [SerializeField] private EnemyController enemyPrefab;
       [SerializeField] private Enemy[] enemyTypes;
@@ -274,7 +275,7 @@ namespace GameSystems.DungeonGeneration {
                         continue;
 
                      Room newRoom;
-                     if (i < generationIterations - 1) 
+                     if (i < generationIterations - 1 && generatedRooms.Count < maxRoomsBeforeDeadEnds) 
                         newRoom = TryGenerateRoom(newRoomPosition, RoomFragment.GetOppositeExit(exit), Vector3Int.one * 2);
                      else
                         newRoom = TryGenerateRoom(newRoomPosition, RoomFragment.GetOppositeExit(exit), randomizeExits: false);
