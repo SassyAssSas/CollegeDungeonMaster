@@ -3736,6 +3736,10 @@ MonoBehaviour:
   roomFillings1x1:
   - {fileID: 11400000, guid: 72bd421e1731b054e894c50a84b5c058, type: 2}
   - {fileID: 11400000, guid: 607e577e344e3454eb572e12f9d4bd18, type: 2}
+  roomFillings1x2:
+  - {fileID: 11400000, guid: c992b0ba3d1c07a439151f512a97d67a, type: 2}
+  roomFillings2x1:
+  - {fileID: 11400000, guid: 6c2a0f1b7c104044f8a5ec8708c42bb3, type: 2}
   roomFillings2x2:
   - {fileID: 11400000, guid: 4648b4b6560a6804ebadaf8fc373175e, type: 2}
   - {fileID: 11400000, guid: dacae929022468a4780e320d61f11baa, type: 2}
@@ -4414,7 +4418,7 @@ PrefabInstance:
     - target: {fileID: 3010776590665887704, guid: 1a2b9a64ef0812d48be587b2b711882d, type: 3}
       propertyPath: <Weapon>k__BackingField
       value: 
-      objectReference: {fileID: 11400000, guid: d0781f6e1ea51da48befb75bfe8fc88e, type: 2}
+      objectReference: {fileID: 11400000, guid: bc7ea9e5666ee0342870d769a12c9f24, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a2b9a64ef0812d48be587b2b711882d, type: 3}
 --- !u!114 &2664775807925031428

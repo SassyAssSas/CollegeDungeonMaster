@@ -10,8 +10,11 @@ public class GameManager : MonoBehaviour {
 
    public static GameManager Instance { get; private set; }
 
-   public delegate void GameManagerAction(GameState state);
-   public event GameManagerAction OnGameStateChange;
+   public delegate void GameManagerStateUpdate(GameState state);
+   public event GameManagerStateUpdate OnGameStateChange;
+
+   public delegate void GameManagerAction();
+   public event GameManagerAction OnRunStarted;
 
    public PlayerInput input;
 
@@ -52,12 +55,14 @@ public class GameManager : MonoBehaviour {
       SceneLoader.Instance.OnSceneLoad += OnSceneLoad;
       SceneLoader.Instance.LoadScene("Dungeon", TransitionManager.FullTransitionType.Fade, GameState.InGame);
       
-      static void OnSceneLoad() {
+      void OnSceneLoad() {
          DungeonManager.Instance.GenerateDungeon();
          Time.timeScale = 1f;
 
          if (!AudioManager.Instance.IsPlaying("DungeonTheme"))
             AudioManager.Instance.Play("DungeonTheme");
+
+         OnRunStarted?.Invoke();
 
          SceneLoader.Instance.OnSceneLoad -= OnSceneLoad;
       }

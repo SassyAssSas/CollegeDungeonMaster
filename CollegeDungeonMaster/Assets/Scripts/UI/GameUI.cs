@@ -31,7 +31,6 @@ namespace UI {
       }
 
       private void OnDestroy() {
-         Instance = null;
          GameManager.Instance.OnGameStateChange -= OnGameStateChange;
       }
 

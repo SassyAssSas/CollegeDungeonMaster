@@ -69,8 +69,9 @@ namespace GameSystems.DungeonGeneration {
       [Header("Fillings")]
       [SerializeField] private SavedTilemap[] startRoomFillings;
       [SerializeField] private SavedTilemap[] roomFillings1x1;
+      [SerializeField] private SavedTilemap[] roomFillings1x2;
+      [SerializeField] private SavedTilemap[] roomFillings2x1;
       [SerializeField] private SavedTilemap[] roomFillings2x2;
-
       #endregion
 
       [Header("Tilemaps")]
@@ -585,6 +586,8 @@ namespace GameSystems.DungeonGeneration {
          if (filling == null) {
             filling = (size.x, size.y) switch {
                (1, 1) => roomFillings1x1[Random.Range(0, roomFillings1x1.Length)],
+               (1, 2) => roomFillings1x2[Random.Range(0, roomFillings1x2.Length)],
+               (2, 1) => roomFillings2x1[Random.Range(0, roomFillings2x1.Length)],
                (2, 2) => roomFillings2x2[Random.Range(0, roomFillings2x2.Length)],
                _ => null
             };
@@ -596,6 +599,7 @@ namespace GameSystems.DungeonGeneration {
             PlaceSavedTilemap(filling, fillingPosition);
          }
 
+         // Adding room to the minimap
          GameUI.Instance.Minimap.AddRoom(room);
 
          return room;

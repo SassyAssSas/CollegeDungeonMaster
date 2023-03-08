@@ -1,5 +1,7 @@
 using UnityEngine;
 using UI;
+using static UnityEngine.GraphicsBuffer;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerAttack))]
@@ -33,7 +35,7 @@ public class Player : MonoBehaviour {
    private void Awake() {
       if (Instance == null) {
          Instance = this;
-        // DontDestroyOnLoad(this);
+         DontDestroyOnLoad(this);
 
          Movement = GetComponent<PlayerMovement>();
          Attack = GetComponent<PlayerAttack>();
@@ -48,10 +50,12 @@ public class Player : MonoBehaviour {
 
    private void Start() {
       GameManager.Instance.OnGameStateChange += OnGameStateChange;
+      GameManager.Instance.OnRunStarted += OnRunStarted;
    }
 
    private void OnDestroy() {
       GameManager.Instance.OnGameStateChange -= OnGameStateChange;
+      GameManager.Instance.OnRunStarted -= OnRunStarted;
    }
 
    public void DealDamage(int damage) {
@@ -68,11 +72,17 @@ public class Player : MonoBehaviour {
          AnimationController.DisableInput();
 
          PauseManager.Instance.DisableInput();
-
          GameUI.Instance.GameOver.Panel.SetActive(true);
+
+         // Undoes the DontDestroyOnLoad
+         SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetActiveScene());
 
          OnPlayerDeath?.Invoke();
       }      
+   }
+
+   private void OnRunStarted() {
+      GameUI.Instance.Bars.HealthBar.SetFillingValue(PlayerHealth / (float)MaxHealth);
    }
 
    private void OnGameStateChange(GameManager.GameState state) {
