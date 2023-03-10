@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Entities.ScriptableObjects.Enemies;
+using Items.Weapons;
 using GameSystems.Navigation;
 using GameSystems.Audio;
 using GameSystems;
@@ -79,7 +80,7 @@ namespace Entities.Controllers {
          var shooter = enemy as Shooter;
 
          shooter.Gun = Instantiate(shooter.Gun);
-         shooter.Gun.Owner = Items.Weapons.Gun.GunOwner.Enemy;
+         shooter.Gun.Owner = Gun.GunOwner.Enemy;
 
          yield return new WaitForEndOfFrame();
 

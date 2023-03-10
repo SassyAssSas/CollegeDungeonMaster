@@ -4,6 +4,7 @@ namespace UI {
    [RequireComponent(typeof(BarsManager))]
    [RequireComponent(typeof(GameOver))]
    [RequireComponent(typeof(Minimap))]
+   [RequireComponent(typeof(CoinsDisplay))]
    public class GameUI : MonoBehaviour {
       private GameUI() { }
 
@@ -12,6 +13,7 @@ namespace UI {
       public BarsManager Bars { get; private set; }
       public GameOver GameOver { get; private set; }
       public Minimap Minimap { get; private set; }
+      public CoinsDisplay CoinsDisplay { get; private set; }
 
       private void Awake() {
          if (Instance == null) {
@@ -20,6 +22,7 @@ namespace UI {
             Bars = GetComponent<BarsManager>();
             GameOver = GetComponent<GameOver>();
             Minimap = GetComponent<Minimap>();
+            CoinsDisplay = GetComponent<CoinsDisplay>();
          }
          else {
             Destroy(gameObject);

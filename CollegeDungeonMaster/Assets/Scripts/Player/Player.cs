@@ -1,11 +1,11 @@
 using UnityEngine;
-using UI;
-using static UnityEngine.GraphicsBuffer;
 using UnityEngine.SceneManagement;
+using UI;
 
 [RequireComponent(typeof(PlayerMovement))]
 [RequireComponent(typeof(PlayerAttack))]
 [RequireComponent(typeof(PlayerAnimation))]
+[RequireComponent(typeof(PlayerInventory))]
 public class Player : MonoBehaviour {
    private Player() { }
 
@@ -14,6 +14,7 @@ public class Player : MonoBehaviour {
    public PlayerMovement Movement { get; private set; }
    public PlayerAttack Attack { get; private set; }
    public PlayerAnimation AnimationController { get; private set; }
+   public PlayerInventory Inventory { get; private set; }
 
    public delegate void PlayerAction();
    public event PlayerAction OnPlayerHit;
@@ -28,7 +29,7 @@ public class Player : MonoBehaviour {
          _maxHealth = value;
       }
    }
-   [SerializeField] private int _maxHealth = 100;
+   [SerializeField] private int _maxHealth = 150;
 
    public int PlayerHealth { get; private set; }
 
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour {
          Movement = GetComponent<PlayerMovement>();
          Attack = GetComponent<PlayerAttack>();
          AnimationController = GetComponent<PlayerAnimation>();
+         Inventory = GetComponent<PlayerInventory>();
 
          PlayerHealth = MaxHealth;
       }
