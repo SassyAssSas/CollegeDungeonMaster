@@ -213,7 +213,8 @@ namespace GameSystems.DungeonGeneration {
          aliveEnemiesCount = enemiesCount;
 
          for (int i = 0; i < enemiesCount; i++) {
-            Vector3 spawnPoint = avaliablePositions.ElementAt(Random.Range(0, avaliablePositions.Count));
+            Vector3Int spawnPoint = avaliablePositions.ElementAt(Random.Range(0, avaliablePositions.Count));
+            avaliablePositions.Remove(spawnPoint);
 
             var enemy = Instantiate(enemyPrefab, spawnPoint, new Quaternion());
 
