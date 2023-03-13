@@ -1102,9 +1102,12 @@ MonoBehaviour:
   - <Name>k__BackingField: ReloadStarted
     <AudioClip>k__BackingField: {fileID: 8300000, guid: f15c24df7c95db747b9de111fd7a1fa7, type: 3}
     <Type>k__BackingField: 1
+  - <Name>k__BackingField: CoinCollected
+    <AudioClip>k__BackingField: {fileID: 8300000, guid: 0fd37af3f0e5522459ad775360309b1b, type: 3}
+    <Type>k__BackingField: 1
   - <Name>k__BackingField: DungeonTheme
     <AudioClip>k__BackingField: {fileID: 8300000, guid: 2f720c3cfe60e2247bcee25560dba146, type: 3}
-    <Type>k__BackingField: 1
+    <Type>k__BackingField: 0
 --- !u!4 &1583816007
 Transform:
   m_ObjectHideFlags: 0

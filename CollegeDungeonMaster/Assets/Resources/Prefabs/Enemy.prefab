@@ -189,6 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 11400000, guid: 151fce39fbb311449bad9eb1744ceb14, type: 2}
   _weaponDisplay: {fileID: 4054798477004109000}
+  coinPrefab: {fileID: 422094204180525312, guid: 8a15f6e735aa7d649a87a0f7c6ffd130, type: 3}
 --- !u!50 &3339748431191383576
 Rigidbody2D:
   serializedVersion: 4

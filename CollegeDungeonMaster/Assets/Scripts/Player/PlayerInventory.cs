@@ -12,7 +12,7 @@ public class PlayerInventory : MonoBehaviour {
    private void OnTriggerEnter2D(Collider2D collision) {
       switch (collision.gameObject.layer) {
          case 7:
-            var collectableEntity = collision.gameObject.GetComponent<CollectableEntity>();
+            var collectableEntity = collision.gameObject.GetComponentInParent<CollectableEntity>();
             CollectItem(collectableEntity);
             break;
 
@@ -29,10 +29,13 @@ public class PlayerInventory : MonoBehaviour {
          case CollectableEntity.CollectableType.Coin:
             Coins++;
             GameUI.Instance.CoinsDisplay.SetCoins(Coins);
+            AudioManager.Instance.PlayOneShot("CoinCollected");
             break;
          default:
             throw new System.Exception("Unhandled collectable type");
       }
+
+
 
       Destroy(collectableEntity.gameObject);
    }

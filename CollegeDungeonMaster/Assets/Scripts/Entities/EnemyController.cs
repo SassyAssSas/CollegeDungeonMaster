@@ -14,6 +14,7 @@ namespace Entities.Controllers {
       [SerializeField] private Enemy enemy;
 
       [SerializeField] private SpriteRenderer _weaponDisplay;
+      [SerializeField] private CollectableEntity coinPrefab;
 
       private delegate IEnumerator EnemyBehaviour();
       private EnemyBehaviour enemyBehaviour;
@@ -305,6 +306,11 @@ namespace Entities.Controllers {
             _animator.Play("Hit");
 
             yield return new WaitForSeconds(0.15f);
+
+            var coinsCount = Random.Range(0, 4);
+            for (int i = 0; i < coinsCount; i++) {
+               Instantiate(coinPrefab, transform.position, new Quaternion());
+            }
 
             OnDeath?.Invoke();
 
