@@ -9,10 +9,16 @@ public class CollectableEntity : MonoBehaviour {
    private const float jumpHeight = 0.5f;
    private const float offset = 0.3f;
 
-   private void Awake() {
+   private void Start() {
       StopAllCoroutines();
       StartCoroutine(JumpCoroutine());
       StartCoroutine(Move());
+   }
+
+   private void Update() {
+      if (Vector2.Distance(Player.Instance.transform.position, transform.position) < 1f) {
+         transform.position += 2 * Time.deltaTime * (Player.Instance.transform.position - transform.position).normalized;
+      }
    }
 
    private IEnumerator JumpCoroutine() {
@@ -35,7 +41,7 @@ public class CollectableEntity : MonoBehaviour {
       var target = transform.position + Quaternion.Euler(0, 0, angle) * new Vector2(Random.value, 0f);
 
       var elapsedTime = 0f;
-      while (transform.position != target) {
+      while (transform.position != target && Vector2.Distance(Player.Instance.transform.position, transform.position) >= 1f) {
          transform.position = Vector3.Lerp(transform.position, target, Time.deltaTime);  
 
          elapsedTime += Time.deltaTime;
