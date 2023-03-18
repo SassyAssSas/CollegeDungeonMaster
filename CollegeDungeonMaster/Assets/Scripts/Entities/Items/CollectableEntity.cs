@@ -62,5 +62,6 @@ public class CollectableEntity : MonoBehaviour {
 
    public enum CollectableType {
       Coin = 0,
+      Healing = 1,
    }
 }
