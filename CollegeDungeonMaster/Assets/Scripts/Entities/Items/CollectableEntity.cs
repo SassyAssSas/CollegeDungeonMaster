@@ -42,7 +42,7 @@ public class CollectableEntity : MonoBehaviour {
 
    private IEnumerator Move() {
       var angle = Random.Range(0, 360);
-      var target = transform.position + Quaternion.Euler(0, 0, angle) * new Vector2(Random.value, 0f);
+      var target = transform.position + Quaternion.Euler(0, 0, angle) * new Vector2(Random.Range(0.1f, 1.5f), 0f);
 
       var elapsedTime = 0f;
       while (Vector2.Distance(transform.position, target) > 0.1f && Vector2.Distance(Player.Instance.transform.position, transform.position) >= followPlayerDistance) {

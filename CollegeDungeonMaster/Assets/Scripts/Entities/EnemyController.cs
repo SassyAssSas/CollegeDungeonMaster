@@ -307,7 +307,7 @@ namespace Entities.Controllers {
 
             yield return new WaitForSeconds(0.15f);
 
-            var coinsCount = Random.Range(0, 4);
+            var coinsCount = Random.Range(1, 5);
             for (int i = 0; i < coinsCount; i++) {
                Instantiate(coinPrefab, transform.position, new Quaternion());
             }
