@@ -37,12 +37,10 @@ namespace GameSystems {
       public void CreateFromPool(Bullet bulletSettings, Vector3 position, Quaternion rotation) {
          var controller = pool.Dequeue();
 
-         controller.gameObject.SetActive(false);
-
-         controller.transform.position = position;
-         controller.Initialize(bulletSettings, rotation);
-
          controller.gameObject.SetActive(true);
+
+         controller.Initialize(bulletSettings, rotation);
+         controller.transform.position = position;
 
          pool.Enqueue(controller);
       }

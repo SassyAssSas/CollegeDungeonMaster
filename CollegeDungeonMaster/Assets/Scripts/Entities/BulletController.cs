@@ -1,6 +1,7 @@
 using UnityEngine;
 using Entities.ScriptableObjects.Generic;
 using Items.Weapons;
+using System.Collections;
 
 namespace Entities.Controllers {
    public class BulletController : MonoBehaviour {
@@ -29,32 +30,33 @@ namespace Entities.Controllers {
 
          passedDistance = 0;
 
-         bulletBehaviour = Bullet switch {
-            null => () => {
-               Debug.LogError("Bullet is null.");
-               Destroy(gameObject);
-            }
-            ,
+         switch (Bullet) {
+            case DefaultBullet:
+               StartCoroutine(DefaultBulletBehaviour());
+               break;
 
-            DefaultBullet => () => DefaultBulletBehaviour(),
-
-            _ => throw new System.Exception("Not implemented bullet behaviour.")
-         };
+            default:
+               throw new System.Exception("Not implemented bullet behaviour.");
+         }
       }
 
-      private void Update() => bulletBehaviour?.Invoke();
-
-      private void DefaultBulletBehaviour() {
+      private IEnumerator DefaultBulletBehaviour() {
          var bullet = Bullet as DefaultBullet;
 
-         var movement = bullet.MovementSpeed * Time.deltaTime * transform.right;
+         while (true) {
+            var movement = bullet.MovementSpeed * Time.deltaTime * transform.right;
 
-         transform.position += movement;
+            transform.position += movement;
 
-         passedDistance += movement.magnitude;
+            passedDistance += movement.magnitude;
 
-         if (passedDistance >= maxDistance)
-            gameObject.SetActive(false);
+            if (passedDistance >= maxDistance) {
+               gameObject.SetActive(false);
+               break;
+            }
+
+            yield return null;
+         }
       }
 
       private void OnTriggerEnter2D(Collider2D collision) {
