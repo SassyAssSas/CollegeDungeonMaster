@@ -9,6 +9,8 @@ using UI;
 public class Player : MonoBehaviour {
    private Player() { }
 
+   [SerializeField] private bool invincible;
+
    public static Player Instance { get; private set; }
 
    public PlayerMovement Movement { get; private set; }
@@ -61,7 +63,8 @@ public class Player : MonoBehaviour {
    }
 
    public void DealDamage(int damage) {
-      PlayerHealth -= damage;
+      if (!invincible)
+         PlayerHealth -= damage;
 
       GameUI.Instance.Bars.HealthBar.SetFillingValue(PlayerHealth / (float)MaxHealth);
 

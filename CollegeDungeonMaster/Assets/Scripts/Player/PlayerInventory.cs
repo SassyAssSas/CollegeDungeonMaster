@@ -35,8 +35,6 @@ public class PlayerInventory : MonoBehaviour {
             throw new System.Exception("Unhandled collectable type");
       }
 
-
-
       Destroy(collectableEntity.gameObject);
    }
 

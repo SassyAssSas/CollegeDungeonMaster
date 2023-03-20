@@ -6,6 +6,7 @@ using Items.Weapons;
 using GameSystems.Navigation;
 using GameSystems.Audio;
 using GameSystems;
+using Unity.VisualScripting;
 
 namespace Entities.Controllers {
    [RequireComponent(typeof(CircleCollider2D))]
@@ -92,11 +93,21 @@ namespace Entities.Controllers {
 
       private IEnumerator ShooterAnimate(Shooter shooter) {
          _animator.runtimeAnimatorController = shooter.AnimatorController;
+         
+         var previousPosition = transform.position;
 
-         if (shooter.AnimatorController != null) {
-            _animator.Play("Running");
-         }
+         LinkedList<(string animationName, float point)> breakpoints = new();
 
+         breakpoints.AddLast(("Idle", 0.005f));
+         breakpoints.AddLast(("Walking", 0.01f));
+         breakpoints.AddLast(("Running", 0.015f));
+
+         var currentBreakpoint = breakpoints.First;
+         _animator.Play(currentBreakpoint.Value.animationName);
+
+         var animationSwitchTimer = 0f;
+         const float switchAnimationPoint = 0.05f;
+         
          while (true) {
             // Rotating the body
             var scaleX = Player.Instance.transform.position.x > transform.position.x ? 1f : -1f;
@@ -111,7 +122,36 @@ namespace Entities.Controllers {
             var targetRotation = Quaternion.FromToRotation(Vector2.right * facingModifier, direction);
 
             _weaponDisplay.transform.rotation = targetRotation;
-            yield return new WaitForEndOfFrame();
+
+            // Updating movement animation
+            var movementDelta = Vector2.Distance(previousPosition, transform.position);
+
+            var breakpoint = currentBreakpoint;
+            if (movementDelta > currentBreakpoint.Next?.Value.point) {
+               breakpoint = currentBreakpoint.Next;
+            }
+            else if (movementDelta < currentBreakpoint.Previous?.Value.point) {
+               breakpoint = currentBreakpoint.Previous;
+            }
+
+            if (breakpoint != currentBreakpoint) {
+               if (animationSwitchTimer < switchAnimationPoint) {
+                  animationSwitchTimer += Time.deltaTime;
+               }
+               else {
+                  _animator.Play(breakpoint.Value.animationName);
+                  currentBreakpoint = breakpoint;
+
+                  animationSwitchTimer = 0;
+               }
+            }
+            else {
+               animationSwitchTimer = 0;
+            }
+
+            previousPosition = transform.position;
+
+            yield return null;
          }
       }
 

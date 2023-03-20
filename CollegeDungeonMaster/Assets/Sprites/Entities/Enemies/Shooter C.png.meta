@@ -243,7 +243,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter C_6
+      name: Walk 0
       rect:
         serializedVersion: 2
         x: 0
@@ -264,7 +264,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter C_7
+      name: Walk 1
       rect:
         serializedVersion: 2
         x: 48
@@ -285,7 +285,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter C_8
+      name: Walk 2
       rect:
         serializedVersion: 2
         x: 96
@@ -306,7 +306,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter C_9
+      name: Walk 3
       rect:
         serializedVersion: 2
         x: 144
@@ -327,7 +327,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter C_10
+      name: Walk 4
       rect:
         serializedVersion: 2
         x: 192
@@ -348,7 +348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooter C_11
+      name: Walk 5
       rect:
         serializedVersion: 2
         x: 240
@@ -373,7 +373,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 432
+        y: 431
         width: 48
         height: 48
       alignment: 0
@@ -1598,12 +1598,12 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Shooter C_21: 130932918
-      Shooter C_10: -1470244482
       Shooter C_44: -191376054
-      Shooter C_56: 1893853420
       Shooter C_67: 1925142724
-      Shooter C_47: -784862415
+      Shooter C_56: 1893853420
       Hit 3: -849794131
+      Shooter C_47: -784862415
+      Walk 4: -1470244482
       Shooter C_64: -927242560
       Shooter C_68: -1586404513
       Idle 4: -730280866
@@ -1620,11 +1620,10 @@ TextureImporter:
       Shooter C_54: -281789338
       Shooter C_41: -976441426
       Shooter C_37: 519604796
-      Shooter C_6: 1795560941
       Shooter C_66: -714201321
       Shooter C_23: -1038493817
       Shooter C_65: 1795729232
-      Shooter C_11: 1135918852
+      Walk 3: 402281745
       Idle 1: 1237627605
       Shooter C_69: 1317658162
       Shooter C_52: 721483444
@@ -1636,7 +1635,6 @@ TextureImporter:
       Shooter C_36: 458549036
       Shooter C_39: 1120792120
       Shooter C_50: 1113794299
-      Shooter C_8: 1838792941
       Shooter C_22: 236519265
       Hit 1: -158209878
       Shooter C_34: -1437075404
@@ -1644,17 +1642,19 @@ TextureImporter:
       Shooter C_18: 1108010712
       Idle 0: 1909478717
       Run 0: 1697759710
+      Walk 5: 1135918852
       Shooter C_57: 857020404
       Shooter C_53: 55383121
+      Walk 1: -1899530280
       Shooter C_26: 1160806937
       Shooter C_46: 1234541420
       Idle 3: -941612234
-      Shooter C_9: 402281745
       Shooter C_48: 355096712
       Hit 0: -1287527458
       Shooter C_29: -1204967671
       Hit 2: -2030503006
       Shooter C_55: 1829977738
+      Walk 2: 1838792941
       Run 4: -2032162839
       Shooter C_51: 254820461
       Shooter C_62: 1258994119
@@ -1666,7 +1666,7 @@ TextureImporter:
       Shooter C_20: 108912108
       Shooter C_49: 1372317885
       Shooter C_28: 445748832
-      Shooter C_7: -1899530280
+      Walk 0: 1795560941
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
